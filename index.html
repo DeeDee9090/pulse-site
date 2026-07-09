@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PULSE — SE execution, in one pulse</title>
+<meta name="description" content="PULSE is a zero-install command centre for Microsoft Solution Engineers: weekly milestone reporting, an 8-motion execution scorecard, CAF nominations, territory whitespace, and an FY Connect generator — driven from a Teams agent and a web dashboard." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolyline points='2,20 12,20 17,8 22,32 27,14 32,24 38,20' fill='none' stroke='%2300d4ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="PULSE home">
+    <svg class="brand-mark" viewBox="0 0 160 40" width="34" height="20" aria-hidden="true">
+      <polyline points="0,20 30,20 42,6 54,34 66,14 78,26 90,20 160,20" fill="none" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="brand-text">PULSE</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#overview">OVERVIEW</a>
+    <a href="#milestones">MILESTONES</a>
+    <a href="#tracker">TRACKER</a>
+    <a href="#caf">CAF</a>
+    <a href="#connect">CONNECT</a>
+    <a href="userguide.html">USER GUIDE</a>
+  </nav>
+  <a class="btn btn-grad nav-cta" href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">OPEN PULSE</a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">☰</button>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="pill"><span class="dot"></span> BUILT BY AN SE, FOR SOLUTION ENGINEERS</div>
+  <h1 class="hero-title">
+    What if your <span class="wrap">weekly report</span><br />
+    <span class="grad">wrote itself?</span>
+  </h1>
+  <p class="hero-sub">
+    PULSE is the command centre for Microsoft Solution Engineers. It turns your
+    real MSX pipeline, meetings, and email into a weekly milestone report, an
+    8-motion execution scorecard, CAF nominations, and an FY Connect — all from a
+    Teams agent and a web dashboard. Nothing to install.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-n">8</div><div class="stat-l">SE motions<br />scored &amp; gap-costed</div></div>
+    <div class="stat"><div class="stat-n">0</div><div class="stat-l">installs — lives in<br />Teams &amp; the browser</div></div>
+    <div class="stat"><div class="stat-n">&lt;5 min</div><div class="stat-l">to a saved<br />weekly report</div></div>
+  </div>
+
+  <div class="hero-cta">
+    <a class="btn btn-grad btn-lg" href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">▶ Open PULSE</a>
+    <a class="btn btn-dark btn-lg" href="userguide.html">📖 Read the user guide</a>
+  </div>
+  <p class="hero-note">Sign in with your Microsoft account. First time? <a href="userguide.html#start">Get your link code →</a></p>
+</section>
+
+<!-- ===== QUOTE ===== -->
+<section class="quote">
+  <p>“The reporting was the bit that <span class="grad">ate my Fridays</span>. PULSE gives it back.”</p>
+  <div class="quote-by">A Data Solution Engineer, Microsoft UK&amp;I</div>
+</section>
+
+<!-- ===== OVERVIEW / WHAT IS PULSE ===== -->
+<section class="section" id="overview">
+  <div class="eyebrow">WHAT IS PULSE</div>
+  <h2 class="section-title">One pane of glass for your <span class="grad">SE execution</span></h2>
+  <p class="section-lead">
+    PULSE reads the systems you already work in — MSX (Dataverse), your Microsoft 365
+    signals, and the Fabric CAF data — and turns them into the four things SEs actually
+    get measured on: weekly progress, motion coverage, Factory nominations, and your
+    FY Connect. You review and approve; PULSE does the assembling.
+  </p>
+  <div class="cards-4">
+    <div class="mini"><div class="mini-ico">🗓️</div><h3>Weekly Milestones</h3><p>Your week, already written — with CRM push and Direct / Partner / Internal evidence.</p><a href="#milestones">Learn more →</a></div>
+    <div class="mini"><div class="mini-ico">🎯</div><h3>Execution Tracker</h3><p>Eight SE motions scored for coverage % and gap ACR, scoped to your discipline.</p><a href="#tracker">Learn more →</a></div>
+    <div class="mini"><div class="mini-ico">🏭</div><h3>CAF Nominations</h3><p>Stalled, declined and eligible-but-not-nominated opportunities, ready to submit.</p><a href="#caf">Learn more →</a></div>
+    <div class="mini"><div class="mini-ico">📝</div><h3>FY Connect</h3><p>Evidence captured all year, written up as Connect prose against goals 1–5.</p><a href="#connect">Learn more →</a></div>
+  </div>
+</section>
+
+<!-- ===== FEATURE: MILESTONES ===== -->
+<section class="feature" id="milestones">
+  <div class="feature-text">
+    <div class="eyebrow">WEEKLY MILESTONES</div>
+    <h2 class="feature-title">Your week,<br /><span class="grad">already written</span></h2>
+    <p>
+      PULSE pulls your live MSX milestones and the week's real activity — meetings,
+      emails, follow-ups — and drafts the weekly progress narrative for each one. You
+      review, tweak, and save. It files everything by fiscal week automatically.
+    </p>
+    <ul class="ticks">
+      <li>AI-drafted weekly progress from your actual M365 activity</li>
+      <li>Direct / Partner / Internal evidence classification</li>
+      <li>One-click push of the update back to CRM (forecast comments)</li>
+      <li>Task-gap and commitment flags so nothing slips</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="Weekly Milestones dashboard">
+    <img src="images/milestones.png" alt="PULSE Weekly Milestones dashboard" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: TRACKER ===== -->
+<section class="feature reverse" id="tracker">
+  <div class="feature-text">
+    <div class="eyebrow">SE EXECUTION TRACKER</div>
+    <h2 class="feature-title">Every motion,<br /><span class="grad">scored</span></h2>
+    <p>
+      A live scorecard across eight strategic SE motions — SQL / Database Gravity,
+      Fabric Attach, Compete-to-Win, Developer + Agentic, Sovereignty, Security Attach,
+      HoK PoC and CAF. See attach coverage and the ACR sitting in the gap, scoped to
+      your discipline via RAIN Qualifier 2.
+    </p>
+    <ul class="ticks">
+      <li>Coverage % and gap ACR per motion</li>
+      <li>Discipline-aware: primary vs adjacent / hand-off</li>
+      <li>Territory whitespace with fit-scored AI attach plays</li>
+      <li>A cockpit brief that tells you where to spend today</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="SE Execution Tracker">
+    <img src="images/tracker.png" alt="PULSE SE Execution Tracker" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: CAF ===== -->
+<section class="feature" id="caf">
+  <div class="feature-text">
+    <div class="eyebrow">CAF NOMINATIONS</div>
+    <h2 class="feature-title">Never miss a<br /><span class="grad">Factory nomination</span></h2>
+    <p>
+      PULSE watches the Cloud Accelerate Factory data and surfaces the opportunities
+      that are eligible but not nominated, stalled, or declined. When one qualifies, it
+      assembles the full nomination packet — mapped to the Azure Offer Navigator form —
+      for you to review and submit.
+    </p>
+    <ul class="ticks">
+      <li>Eligible / stalled / declined nomination queue</li>
+      <li>Auto-resolved specialist and co-sell partner</li>
+      <li>Copy-ready packet aligned to Azure Offer Navigator sections</li>
+      <li>PULSE never submits for you — you stay in control</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="CAF nomination packet">
+    <img src="images/caf.png" alt="PULSE CAF nomination packet" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: CONNECT ===== -->
+<section class="feature reverse" id="connect">
+  <div class="feature-text">
+    <div class="eyebrow">FY CONNECT</div>
+    <h2 class="feature-title">Your Connect,<br /><span class="grad">evidenced all year</span></h2>
+    <p>
+      Add evidence whenever it happens — a win, a workshop, a piece of feedback. PULSE
+      keeps it in a per-user store and, on demand, writes your Connect prose over a
+      window you choose, mapped to the goal framework. No scramble in review season.
+    </p>
+    <ul class="ticks">
+      <li>Continuous evidence capture — add items any time</li>
+      <li>AI-written Connect prose classified to goals 1–5</li>
+      <li>Generate over any lookback window you pick</li>
+      <li>Save snapshots you can revisit and refine</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="FY Connect generator">
+    <img src="images/connect.png" alt="PULSE FY Connect generator" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section alt" id="how">
+  <div class="eyebrow">HOW IT WORKS</div>
+  <h2 class="section-title">Lives where you <span class="grad">already work</span></h2>
+  <p class="section-lead">No desktop app, no local setup. PULSE is a Microsoft 365 agent in Teams plus a secure web dashboard, backed by your MSX data.</p>
+  <div class="how-grid">
+    <div class="how-step"><div class="how-n">1</div><h3>The Teams agent</h3><p>Ask PULSE to “generate my report” right inside Teams or Copilot. It gathers your week and drafts it.</p></div>
+    <div class="how-step"><div class="how-n">2</div><h3>The web dashboard</h3><p>Review, edit and save. Milestones, Tracker, CAF and Connect all light up with your own data.</p></div>
+    <div class="how-step"><div class="how-n">3</div><h3>Your data, secured</h3><p>Server-to-server to Dataverse and a Fabric lakehouse. You sign in with your Microsoft account — PULSE only ever sees your territory.</p></div>
+  </div>
+</section>
+
+<!-- ===== GET STARTED ===== -->
+<section class="section getstarted" id="start">
+  <div class="eyebrow center">GET STARTED</div>
+  <h2 class="section-title center">Up and running in <span class="grad">three steps</span></h2>
+  <div class="steps">
+    <div class="step"><span class="step-n">1</span><div><h3>Get your PULSE link code</h3><p>Open the dashboard and grab your one-time code (looks like <code>ABCD-EFGH</code>) from the Link page.</p></div></div>
+    <div class="step"><span class="step-n">2</span><div><h3>Open the PULSE agent in Teams</h3><p>Say <em>“generate my report.”</em> Send your code when asked — you only link once.</p></div></div>
+    <div class="step"><span class="step-n">3</span><div><h3>Save to your dashboard</h3><p>Say <em>“save to dashboard.”</em> Your milestones, tracker, CAF and Connect now populate automatically.</p></div></div>
+  </div>
+  <div class="getstarted-cta">
+    <a class="btn btn-grad btn-lg" href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">🔗 Get your link code</a>
+    <a class="btn btn-dark btn-lg" href="userguide.html">📖 Full user guide</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section contact-sec">
+  <h2 class="section-title center">Questions, ideas, or want it in your patch?</h2>
+  <p class="section-lead center">PULSE is built and run by one SE in UK&amp;I. Feedback and collaboration very welcome.</p>
+  <a class="contact-card" href="mailto:dboateng@microsoft.com"><span class="c-ico">✉️</span> dboateng@microsoft.com</a>
+</section>
+
+<footer class="footer">
+  <div class="brand footer-brand">
+    <svg class="brand-mark" viewBox="0 0 160 40" width="30" height="18" aria-hidden="true"><polyline points="0,20 30,20 42,6 54,34 66,14 78,26 90,20 160,20" fill="none" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span class="brand-text">PULSE</span>
+  </div>
+  <div class="footer-sub">Pipeline Updates, Lifecycle &amp; SE Execution</div>
+  <div class="footer-links">
+    <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">Open dashboard</a>
+    <a href="userguide.html">User guide</a>
+    <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/privacy" target="_blank" rel="noopener">Privacy</a>
+  </div>
+  <div class="footer-fine">Microsoft-internal tool for Solution Engineers. Not an official Microsoft product.</div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
