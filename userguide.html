@@ -48,6 +48,8 @@
     <a href="#tracker">Execution Tracker</a>
     <a href="#caf">CAF nominations</a>
     <a href="#connect">FY Connect</a>
+    <a href="#how">How it works</a>
+    <a href="#safety">Safety &amp; trust</a>
     <a href="#faq">FAQ</a>
   </div>
 </section>
@@ -87,6 +89,9 @@
     <li><strong>Exclude a card</strong> from CRM push with the per-card toggle.</li>
     <li><strong>Switch fiscal year</strong> with the FY selector; prior FYs appear only if they have saved reports.</li>
   </ul>
+  <h3>CRM write-back</h3>
+  <p>When you push, PULSE <strong>appends</strong> a milestone or opportunity comment and creates any Hands-on-Keyboard (HoK) task activities — it never overwrites an existing comment or edits/closes an existing task, and it de-duplicates. Nothing is written to MSX until you approve it.</p>
+  <div class="callout"><strong>Other captured activity:</strong> work whose milestone is <em>closed or cancelled</em> isn't forced onto the wrong milestone. PULSE captures it separately, and you can post it as an <strong>opportunity-level forecast comment</strong> on an open opportunity instead — again, only on your confirmation.</div>
 
   <h2 id="tracker">4 · SE Execution Tracker</h2>
   <p>A scorecard across eight strategic SE motions, scoped to your discipline (via RAIN Qualifier 2, so a Data SE and an Apps SE see different primary motions).</p>
@@ -113,13 +118,49 @@
     <li><strong>Save snapshots</strong> to revisit and refine later.</li>
   </ul>
 
+  <h2 id="how">7 · How PULSE works <span class="tag">ARCHITECTURE</span></h2>
+  <p class="lead">PULSE is <strong>hosted and per-user</strong> — there's nothing to install and every signed-in SE sees only their own pipeline. Here's the path a request takes:</p>
+  <div class="archflow">
+    <span class="node">🧑‍💻 You<small>Teams / M365 Copilot</small></span>
+    <span class="arrow">→</span>
+    <span class="node">🤖 PULSE agent<small>drafts your report</small></span>
+    <span class="arrow">→</span>
+    <span class="node">🛡️ Secure gateway<small>auth · rate-limit · audit</small></span>
+    <span class="arrow">→</span>
+    <span class="node">⚙️ PULSE APIs<small>Azure Functions</small></span>
+    <span class="arrow">→</span>
+    <span class="node">🗄️ Your MSX &amp; M365<small>Dataverse · mail · chat · calendar</small></span>
+    <span class="arrow">→</span>
+    <span class="node">📊 Your dashboards<small>MSAL sign-in</small></span>
+  </div>
+  <ul class="layers">
+    <li><strong>The agent</strong> is a Microsoft 365 declarative agent. It gathers your week and drafts the report, using Copilot's native Graph grounding to read <em>your</em> M365 activity (mail, chat, calendar).</li>
+    <li><strong>The secure gateway</strong> fronts every agent call — it authenticates the request, applies rate limits, and writes a central audit trail. The APIs reject any call that hasn't come through it.</li>
+    <li><strong>The PULSE APIs</strong> build and persist your report, hold your Connect evidence, compute territory whitespace, and stage CRM write-backs. Each caller is resolved through a single trusted-identity check (your sign-in, or a one-time link code).</li>
+    <li><strong>Your data</strong> lives in MSX (Dataverse). Reports and Connect evidence are stored <strong>per-user</strong>, keyed to your account id — so your data is isolated from every other SE's.</li>
+    <li><strong>The dashboards</strong> are a secure web app. You sign in with your Microsoft account and read only your own per-user data.</li>
+  </ul>
+
+  <h2 id="safety">8 · Safety, privacy &amp; trust</h2>
+  <p>PULSE is deliberately conservative about anything that touches MSX or your data:</p>
+  <ul>
+    <li><strong>The agent suggests; the dashboard writes.</strong> Every HoK activity, CRM comment and CAF nomination is surfaced for you to confirm — the agent never writes on its own.</li>
+    <li><strong>Append-only / create-only.</strong> Existing comments are never overwritten, existing tasks are never modified or closed, and duplicates are detected.</li>
+    <li><strong>Evidence is classified by who attended.</strong> A call with only a partner present (no customer) is <em>Partner</em>, never Direct — even when it concerns that customer. Partner and Internal evidence never auto-push to CRM.</li>
+    <li><strong>Per-user isolation.</strong> Every report and Connect store is keyed to your account id; you only ever see your own data.</li>
+    <li><strong>HoK is status-truth.</strong> Hands-on-Keyboard reflects your MSX records, never an inferred value.</li>
+    <li><strong>Active-contribution rule.</strong> Only evidence where <em>you</em> actively contributed is included.</li>
+  </ul>
+
   <h2 id="faq">FAQ</h2>
   <h3>Do I need to install anything?</h3>
   <p>No. PULSE is a Microsoft 365 agent in Teams plus a web dashboard. Nothing to download.</p>
   <h3>Can other SEs see my data?</h3>
   <p>No. You sign in with your Microsoft account and PULSE only ever shows your own territory. Pages stay empty until <em>you</em> save a report.</p>
   <h3>Will it edit MSX without me?</h3>
-  <p>No. PULSE drafts and assembles; you review and approve every push, comment and nomination.</p>
+  <p>No. PULSE drafts and assembles; you review and approve every push, comment and nomination. Comments are only ever appended and tasks are only ever created — nothing existing is overwritten or closed.</p>
+  <h3>Where is my data stored?</h3>
+  <p>In MSX (Dataverse), stored per-user against your own account id — so it's isolated from other SEs. Your M365 activity is read live through Microsoft Copilot's Graph grounding when a report is generated; PULSE doesn't keep a separate copy of your mail or chat.</p>
   <h3>Why is a page empty?</h3>
   <p>You haven't saved a report yet. Generate one in the Teams agent and say “save to dashboard.”</p>
 
