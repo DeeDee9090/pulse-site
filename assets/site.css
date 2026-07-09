@@ -162,6 +162,7 @@ body > *:not(.bg-lines) { position: relative; z-index: 1; }
 .guide h2 { font-size: 1.65rem; margin: 48px 0 8px; scroll-margin-top: 90px; }
 .guide h2 .tag { font-size: 0.68rem; vertical-align: middle; margin-left: 10px; padding: 3px 10px; border-radius: 999px; background: var(--glass-2); border: 1px solid var(--border); color: var(--muted); letter-spacing: 1px; font-weight: 700; }
 .guide h3 { font-size: 1.12rem; margin: 26px 0 6px; }
+.guide h4 { font-size: 1rem; margin: 20px 0 4px; color: #eaf1ff; font-weight: 700; }
 .guide p, .guide li { color: #d6ddf2; }
 .guide ul, .guide ol { padding-left: 22px; }
 .guide li { margin: 6px 0; }

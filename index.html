@@ -197,26 +197,51 @@
 <section class="section alt" id="how">
   <div class="eyebrow">HOW IT WORKS</div>
   <h2 class="section-title">Lives where you <span class="grad">already work</span></h2>
-  <p class="section-lead">No desktop app, no local setup. PULSE is a Microsoft 365 agent in Teams plus a secure web dashboard, backed by your MSX data.</p>
-  <div class="how-grid">
-    <div class="how-step"><div class="how-n">1</div><h3>The Teams agent</h3><p>Ask PULSE to “generate my report” right inside Teams or Copilot. It gathers your week and drafts it.</p></div>
-    <div class="how-step"><div class="how-n">2</div><h3>The web dashboard</h3><p>Review, edit and save. Milestones, Tracker, CAF and Connect all light up with your own data.</p></div>
-    <div class="how-step"><div class="how-n">3</div><h3>Your data, secured</h3><p>Server-to-server to Dataverse and a Fabric lakehouse. You sign in with your Microsoft account — PULSE only ever sees your territory.</p></div>
+  <p class="section-lead">No desktop app. PULSE is a Microsoft 365 agent in Copilot plus a secure web dashboard, backed by your own MSX data. Here's the path a request takes:</p>
+
+  <div class="archflow how-arch">
+    <span class="node">🧑‍💻 You<small>Teams / M365 Copilot</small></span>
+    <span class="arrow">→</span>
+    <span class="node">🤖 PULSE agent<small>drafts your report</small></span>
+    <span class="arrow">→</span>
+    <span class="node">🛡️ Secure gateway<small>auth · rate-limit · audit</small></span>
+    <span class="arrow">→</span>
+    <span class="node">⚙️ PULSE APIs<small>Azure Functions</small></span>
+    <span class="arrow">→</span>
+    <span class="node">🗄️ Your MSX &amp; M365<small>Dataverse · mail · chat · calendar</small></span>
+    <span class="arrow">→</span>
+    <span class="node">📊 Your dashboards<small>secure sign-in</small></span>
   </div>
+
+  <div class="how-grid">
+    <div class="how-step"><div class="how-n">1</div><h3>The Copilot agent</h3><p>Ask PULSE to “generate my report” inside Microsoft 365 Copilot. It gathers your week and drafts it.</p></div>
+    <div class="how-step"><div class="how-n">2</div><h3>The web dashboard</h3><p>Review, edit and save. Milestones, Tracker, CAF and Connect all light up with your own data.</p></div>
+    <div class="how-step"><div class="how-n">3</div><h3>Your data, secured</h3><p>Per-user and keyed to your account — you sign in with your Microsoft account and PULSE only ever sees your territory.</p></div>
+  </div>
+
+  <h3 class="trust-h">Built to be trusted</h3>
+  <ul class="ticks trust-ticks">
+    <li>The agent suggests; the dashboard writes — you approve every CRM push, comment and nomination.</li>
+    <li>Append-only and create-only — nothing existing is ever overwritten, closed, or duplicated.</li>
+    <li>Per-user isolation — your reports and Connect evidence are keyed to you alone.</li>
+    <li>Evidence is classified by who attended — partner-only calls never post as Direct, and never auto-push.</li>
+  </ul>
 </section>
 
 <!-- ===== GET STARTED ===== -->
 <section class="section getstarted" id="start">
   <div class="eyebrow center">GET STARTED</div>
-  <h2 class="section-title center">Up and running in <span class="grad">three steps</span></h2>
+  <h2 class="section-title center">Up and running in <span class="grad">four steps</span></h2>
+  <p class="section-lead center">PULSE isn't in the company app store yet, so there's a quick one-time setup (~5 min) to add the agent. The <a href="userguide.html#start" style="color:#7fd4ff;font-weight:600;">user guide</a> has the full walkthrough.</p>
   <div class="steps">
-    <div class="step"><span class="step-n">1</span><div><h3>Get your PULSE link code</h3><p>Open the dashboard and grab your one-time code (looks like <code>ABCD-EFGH</code>) from the Link page.</p></div></div>
-    <div class="step"><span class="step-n">2</span><div><h3>Open the PULSE agent in Teams</h3><p>Say <em>“generate my report.”</em> Send your code when asked — you only link once.</p></div></div>
-    <div class="step"><span class="step-n">3</span><div><h3>Save to your dashboard</h3><p>Say <em>“save to dashboard.”</em> Your milestones, tracker, CAF and Connect now populate automatically.</p></div></div>
+    <div class="step"><span class="step-n">1</span><div><h3>Add PULSE to Teams</h3><p>Ask Daphne to add you as a collaborator, then <em>dev.teams.microsoft.com → Apps → PULSE → Preview in Teams</em>. No file needed. One time only.</p></div></div>
+    <div class="step"><span class="step-n">2</span><div><h3>Get your link code</h3><p>Open the dashboard's Link page, sign in, and copy your one-time code (looks like <code>ABCD-EFGH</code>).</p></div></div>
+    <div class="step"><span class="step-n">3</span><div><h3>Link &amp; generate</h3><p>Open PULSE in Copilot, say <em>“generate my report,”</em> and paste your code when asked.</p></div></div>
+    <div class="step"><span class="step-n">4</span><div><h3>Save to your dashboard</h3><p>Say <em>“save to dashboard.”</em> Milestones, Tracker, CAF and Connect now populate automatically.</p></div></div>
   </div>
   <div class="getstarted-cta">
-    <a class="btn btn-grad btn-lg" href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">🔗 Get your link code</a>
-    <a class="btn btn-dark btn-lg" href="userguide.html">📖 Full user guide</a>
+    <a class="btn btn-grad btn-lg" href="userguide.html#start">📖 Full setup walkthrough</a>
+    <a class="btn btn-dark btn-lg" href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">🔗 Get your link code</a>
   </div>
 </section>
 

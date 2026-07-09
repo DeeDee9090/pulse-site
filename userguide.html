@@ -63,17 +63,52 @@
     see your own territory.
   </div>
 
-  <h2 id="start">1 · Get started <span class="tag">3 STEPS</span></h2>
-  <p class="lead">You link your account once, then everything runs from Teams and the dashboard.</p>
+  <h2 id="start">1 · Get started <span class="tag">ONE-TIME SETUP</span></h2>
+  <p class="lead">PULSE isn't in the company app store yet, so getting the agent is a quick <strong>one-time</strong> setup — about five minutes. After that, everything runs from Teams and the dashboard.</p>
+
+  <div class="callout">
+    <strong>Before you start, you'll need:</strong>
+    <ul>
+      <li>A <strong>Microsoft 365 Copilot</strong> licence (the agent runs inside Copilot).</li>
+      <li><strong>Custom app upload</strong> (sideloading) enabled for you in Teams — most Microsoft SEs already have this. If not, see “If neither option works” below.</li>
+    </ul>
+  </div>
+
+  <h3>Step 1 — Get PULSE added to your Teams</h3>
+  <p>There are two ways. <strong>Option A is the quickest</strong> and needs no file.</p>
+
+  <h4>Option A — Ask Daphne to add you as a collaborator <span class="tag">RECOMMENDED · NO FILE</span></h4>
   <ol>
-    <li><strong>Get your link code.</strong> Open the <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">PULSE link page</a>, sign in with your Microsoft account, and copy your one-time code — it looks like <code>ABCD-EFGH</code>.</li>
-    <li><strong>Open the PULSE agent in Teams</strong> (or Microsoft 365 Copilot) and say <em>“generate my report.”</em> When it asks, paste your code. You only ever link once.</li>
-    <li><strong>Save it.</strong> Say <em>“save to dashboard.”</em> Your <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">dashboard</a> now populates — Milestones, Tracker, CAF and Connect all light up with your data.</li>
+    <li><a href="mailto:dboateng@microsoft.com?subject=PULSE%20access%20-%20please%20add%20me%20as%20collaborator&amp;body=Hi%20Daphne%2C%20please%20add%20me%20as%20a%20collaborator%20on%20the%20PULSE%20agent%20so%20I%20can%20Preview%20it%20in%20Teams.%20Thanks!">Email Daphne your work address</a> and ask to be added as a collaborator on the PULSE agent. (She adds you in the Teams Developer Portal — takes seconds.)</li>
+    <li>Once added, go to <strong><a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com</a> → Apps</strong> and open <strong>PULSE</strong>.</li>
+    <li>Click <strong>Preview in Teams</strong>. PULSE installs straight into your Teams / Copilot — <em>no download or upload</em>.</li>
   </ol>
+
+  <h4>Option B — Upload the package yourself</h4>
+  <ol>
+    <li>Ask Daphne for the package file <code>PULSE-agent-v1.0.55.zip</code> and save it (don't unzip it).</li>
+    <li>In <strong>Microsoft Teams</strong>, open <strong>Apps</strong> (left rail, or the <strong>···</strong> menu) → <strong>Manage your apps</strong>.</li>
+    <li>Click <strong>Upload an app</strong> → <strong>Upload a custom app</strong>, pick the <code>.zip</code>, and confirm <strong>Add</strong>.</li>
+  </ol>
+
+  <p>Either way, PULSE now appears in <strong>Microsoft 365 Copilot</strong> in your agents list. Pin it so it's easy to find.</p>
+  <div class="callout">
+    <strong>If neither option works</strong> — “Preview in Teams” or “Upload a custom app” is greyed out or missing — your tenant hasn't enabled custom app upload for you. <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">Email Daphne</a>; PULSE can instead be published to the org app catalogue by a Teams admin, after which you'll simply find “PULSE” in <strong>Apps</strong> with nothing to install.
+  </div>
+
+  <h3>Step 2 — Link your account (one time)</h3>
+  <ol>
+    <li>Open the <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">PULSE link page</a>, sign in with your Microsoft account, and copy your one-time code — it looks like <code>ABCD-EFGH</code>.</li>
+    <li>Open <strong>PULSE</strong> in Copilot and say <em>“generate my report.”</em> When it asks, paste your code. You only ever link once.</li>
+  </ol>
+
+  <h3>Step 3 — Generate &amp; save</h3>
+  <p>Say <em>“save to dashboard.”</em> Your <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">dashboard</a> now populates — Milestones, Tracker, CAF and Connect all light up with your data.</p>
+
   <div class="callout">Until you've saved at least one report, the Tracker, Connect and Account pages stay empty on purpose — they'll unlock automatically once your first report is saved.</div>
 
   <h2 id="agent">2 · The Teams agent</h2>
-  <p>The agent is where reports are generated. A few things you can say:</p>
+  <p>Once PULSE is added (section 1) and pinned, open it inside <strong>Microsoft 365 Copilot</strong>. The agent is where reports are generated. A few things you can say:</p>
   <span class="cmd">generate my report</span>
   <span class="cmd">save to dashboard</span>
   <span class="cmd">what's changed since last week?</span>
@@ -154,7 +189,11 @@
 
   <h2 id="faq">FAQ</h2>
   <h3>Do I need to install anything?</h3>
-  <p>No. PULSE is a Microsoft 365 agent in Teams plus a web dashboard. Nothing to download.</p>
+  <p>No desktop app — but because PULSE isn't in the company app store yet, you add it once through Microsoft 365 Copilot. The quickest way is to ask Daphne to add you as a <strong>collaborator</strong>, then click <strong>Preview in Teams</strong> from <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a> — no file needed. Full steps in <a href="#start">Get started</a>.</p>
+  <h3>How do I actually get the agent?</h3>
+  <p><strong>Option A (recommended):</strong> ask Daphne to add you as a collaborator, then open <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps → PULSE → Preview in Teams</a>. <strong>Option B:</strong> ask her for <code>PULSE-agent-v1.0.55.zip</code> and upload it via <em>Teams → Apps → Manage your apps → Upload a custom app</em>. See <a href="#start">Get started</a>.</p>
+  <h3>“Preview in Teams” / the upload option is greyed out — what now?</h3>
+  <p>Your tenant hasn't enabled custom app upload (sideloading) for you — this affects both options. <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">Email Daphne</a>; the agent can be published to the org app catalogue by a Teams admin instead, so you'll just find “PULSE” in Apps with nothing to install.</p>
   <h3>Can other SEs see my data?</h3>
   <p>No. You sign in with your Microsoft account and PULSE only ever shows your own territory. Pages stay empty until <em>you</em> save a report.</p>
   <h3>Will it edit MSX without me?</h3>
