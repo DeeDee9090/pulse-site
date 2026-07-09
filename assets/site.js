@@ -16,7 +16,7 @@
       if (en.isIntersecting) { en.target.style.opacity = 1; en.target.style.transform = 'none'; io.unobserve(en.target); }
     });
   }, { threshold: 0.12 });
-  document.querySelectorAll('.feature, .mini, .how-step, .step, .quote').forEach(function (el) {
+  document.querySelectorAll('.feature, .mini, .how-step, .step, .mission').forEach(function (el) {
     el.style.opacity = 0; el.style.transform = 'translateY(24px)';
     el.style.transition = 'opacity .6s ease, transform .6s ease';
     io.observe(el);

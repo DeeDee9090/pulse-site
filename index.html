@@ -5,13 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PULSE — SE execution, in one pulse</title>
 <meta name="description" content="PULSE is a zero-install command centre for Microsoft Solution Engineers: weekly milestone reporting, an 8-motion execution scorecard, CAF nominations, territory whitespace, and an FY Connect generator — driven from a Teams agent and a web dashboard." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/site.css" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolyline points='2,20 12,20 17,8 22,32 27,14 32,24 38,20' fill='none' stroke='%2300d4ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 </head>
 <body>
+
+<!-- ===== animated pulse-line background ===== -->
+<div class="bg-lines" aria-hidden="true">
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+    <polyline fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      points="0,150 220,150 260,150 285,60 315,240 345,110 375,150 560,150 600,150 625,80 655,220 685,130 715,150 900,150 940,150 965,55 995,245 1025,120 1055,150 1200,150">
+      <animate attributeName="stroke-dashoffset" from="0" to="-400" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="stroke-dasharray" values="400 0;400 0" dur="0.1s" fill="freeze" />
+    </polyline>
+    <polyline fill="none" stroke="#8764b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"
+      points="0,200 180,200 220,200 245,130 275,270 305,170 335,200 520,200 560,200 585,140 615,260 645,180 675,200 860,200 900,200 925,120 955,280 985,160 1015,200 1200,200">
+      <animate attributeName="stroke-dashoffset" from="0" to="-500" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="stroke-dasharray" values="500 0;500 0" dur="0.1s" fill="freeze" />
+    </polyline>
+    <polyline fill="none" stroke="#0078d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"
+      points="0,100 200,100 240,100 265,30 295,190 325,70 355,100 540,100 580,100 605,40 635,180 665,90 695,100 880,100 920,100 945,25 975,195 1005,80 1035,100 1200,100">
+      <animate attributeName="stroke-dashoffset" from="0" to="-450" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="stroke-dasharray" values="450 0;450 0" dur="0.1s" fill="freeze" />
+    </polyline>
+  </svg>
+</div>
 
 <!-- ===== NAV ===== -->
 <header class="nav" id="top">
@@ -36,22 +54,23 @@
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="hero-glow"></div>
-  <div class="pill"><span class="dot"></span> BUILT BY AN SE, FOR SOLUTION ENGINEERS</div>
+  <div class="pill"><span class="dot"></span> PIPELINE UPDATES · LIFECYCLE · SE EXECUTION</div>
   <h1 class="hero-title">
-    What if your <span class="wrap">weekly report</span><br />
-    <span class="grad">wrote itself?</span>
+    Every milestone, motion, and Connect —<br />
+    <span class="grad">in one pulse.</span>
   </h1>
   <p class="hero-sub">
-    PULSE is the command centre for Microsoft Solution Engineers. It turns your
+    PULSE is the AI-powered command centre for Microsoft Solution Engineers. It turns your
     real MSX pipeline, meetings, and email into a weekly milestone report, an
     8-motion execution scorecard, CAF nominations, and an FY Connect — all from a
     Teams agent and a web dashboard. Nothing to install.
   </p>
 
-  <div class="stats">
-    <div class="stat"><div class="stat-n">8</div><div class="stat-l">SE motions<br />scored &amp; gap-costed</div></div>
-    <div class="stat"><div class="stat-n">0</div><div class="stat-l">installs — lives in<br />Teams &amp; the browser</div></div>
-    <div class="stat"><div class="stat-n">&lt;5 min</div><div class="stat-l">to a saved<br />weekly report</div></div>
+  <div class="hero-pills">
+    <span class="fpill">📊 Weekly Milestones</span>
+    <span class="fpill">🎯 SE Execution Tracker</span>
+    <span class="fpill">🏭 CAF Nominations</span>
+    <span class="fpill">📝 FY Connect Generator</span>
   </div>
 
   <div class="hero-cta">
@@ -61,16 +80,15 @@
   <p class="hero-note">Sign in with your Microsoft account. First time? <a href="userguide.html#start">Get your link code →</a></p>
 </section>
 
-<!-- ===== QUOTE ===== -->
-<section class="quote">
-  <p>“The reporting was the bit that <span class="grad">ate my Fridays</span>. PULSE gives it back.”</p>
-  <div class="quote-by">A Data Solution Engineer, Microsoft UK&amp;I</div>
+<!-- ===== MISSION ===== -->
+<section class="mission">
+  <p>Less time <span class="grad">reporting</span> your work. More time <span class="grad">doing</span> it.</p>
 </section>
 
 <!-- ===== OVERVIEW / WHAT IS PULSE ===== -->
 <section class="section" id="overview">
   <div class="eyebrow">WHAT IS PULSE</div>
-  <h2 class="section-title">One pane of glass for your <span class="grad">SE execution</span></h2>
+  <h2 class="section-title">One command centre for your <span class="grad">SE execution</span></h2>
   <p class="section-lead">
     PULSE reads the systems you already work in — MSX (Dataverse), your Microsoft 365
     signals, and the Fabric CAF data — and turns them into the four things SEs actually
