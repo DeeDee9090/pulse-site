@@ -111,17 +111,65 @@
     <p>
       PULSE pulls your live MSX milestones and the week's real activity — meetings,
       emails, follow-ups — and drafts the weekly progress narrative for each one. You
-      review, tweak, and save. It files everything by fiscal week automatically.
+      review, tweak, and save. It files everything by fiscal week automatically, with a
+      roll-up of territory value, ACR, HoK and blockers across every deal.
     </p>
     <ul class="ticks">
       <li>AI-drafted weekly progress from your actual M365 activity</li>
       <li>Direct / Partner / Internal evidence classification</li>
-      <li>One-click push of the update back to CRM (forecast comments)</li>
-      <li>Task-gap and commitment flags so nothing slips</li>
+      <li>Roll-up of ACR, monthly use, HoK, task-gaps and blockers</li>
+      <li>Files by fiscal week automatically — every week retained</li>
     </ul>
   </div>
   <figure class="shot" data-label="Weekly Milestones dashboard">
     <img src="images/milestones.png" alt="PULSE Weekly Milestones dashboard" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: PUSH TO CRM ===== -->
+<section class="feature reverse" id="crm">
+  <div class="feature-text">
+    <div class="eyebrow">EDIT &amp; PUSH TO CRM</div>
+    <h2 class="feature-title">Review, edit,<br /><span class="grad">push to CRM</span></h2>
+    <p>
+      Every card opens into a full editor. Refine the weekly progress, set the status,
+      capture next steps and add tasks — then watch the CRM comment build live in the
+      preview. One click writes the forecast comment back to MSX and logs your tasks as
+      MSX activities. The generated text is a starting point; the final word is always
+      yours.
+    </p>
+    <ul class="ticks">
+      <li>Editable commentary — the CRM comment updates as you type</li>
+      <li>Set milestone status: On Track, At Risk, Blocked, Completed…</li>
+      <li>Tasks become MSX activities (Workshop, POC/Pilot, Demo, ADS…)</li>
+      <li>Only <strong>Direct</strong> customer evidence auto-pushes — you stay in control</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="Edit &amp; push to CRM">
+    <img src="images/crm-edit.png" alt="PULSE edit panel with editable CRM comment preview and task status" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: ACCOUNT LIST ===== -->
+<section class="feature" id="accounts">
+  <div class="feature-text">
+    <div class="eyebrow">ACCOUNT LIST</div>
+    <h2 class="feature-title">Your whole<br /><span class="grad">territory, mapped</span></h2>
+    <p>
+      PULSE reads your deal-team assignments straight from Dataverse and lays out your
+      full book of business — parent accounts, their child organisations, and the
+      territory each rolls up to. Duplicate records are de-duplicated, and each account
+      is tagged with the SE motions in play so you always know your patch.
+    </p>
+    <ul class="ticks">
+      <li>Parent accounts and child organisations from your deal teams</li>
+      <li>Grouped by territory unit, with sub-org counts</li>
+      <li>Motion tags per account so coverage is obvious</li>
+      <li>The same source of truth the Tracker and Whitespace use</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="Account List">
+    <img src="images/portfolio.png" alt="PULSE Account List — parent accounts and child organisations by territory" onerror="this.closest('.shot').classList.add('shot-empty')" />
   </figure>
 </section>
 
@@ -131,20 +179,67 @@
     <div class="eyebrow">SE EXECUTION TRACKER</div>
     <h2 class="feature-title">Every motion,<br /><span class="grad">scored</span></h2>
     <p>
-      A live scorecard across eight strategic SE motions — SQL / Database Gravity,
-      Fabric Attach, Compete-to-Win, Developer + Agentic, Sovereignty, Security Attach,
-      HoK PoC and CAF. See attach coverage and the ACR sitting in the gap, scoped to
-      your discipline via RAIN Qualifier 2.
+      A live command centre for your patch. The Tracker opens on an execution posture
+      strip — deals with evidence, at-risk, committed, HoK, deduped ACR — then hands you
+      a prioritised "this week" action list, an outcome scorecard, and a per-motion
+      breakdown, all scoped to your discipline via RAIN Qualifier 2.
     </p>
     <ul class="ticks">
-      <li>Coverage % and gap ACR per motion</li>
-      <li>Discipline-aware: primary vs adjacent / hand-off</li>
-      <li>Territory whitespace with fit-scored AI attach plays</li>
-      <li>A cockpit brief that tells you where to spend today</li>
+      <li>Execution posture: evidence, risk, committed, HoK and ACR at a glance</li>
+      <li>"This week" action list — the highest-value gaps to close now</li>
+      <li>Outcome scorecard by territory lens (My / Cross / All)</li>
+      <li>An AI cockpit brief that tells you where to spend today</li>
     </ul>
   </div>
   <figure class="shot" data-label="SE Execution Tracker">
     <img src="images/tracker.png" alt="PULSE SE Execution Tracker" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: MOTION BREAKDOWN ===== -->
+<section class="feature" id="motions">
+  <div class="feature-text">
+    <div class="eyebrow">MOTION COVERAGE</div>
+    <h2 class="feature-title">Attach gaps,<br /><span class="grad">deal by deal</span></h2>
+    <p>
+      Expand any of the strategic SE motions — SQL / Database Gravity, Fabric Attach,
+      Compete-to-Win, Developer + Agentic, Sovereignty, Security Attach, HoK PoC — and
+      PULSE shows exactly which opportunities have it attached and which don't, with the
+      ACR sitting in the gap. It's the difference between "we should attach more" and a
+      named list of deals to act on.
+    </p>
+    <ul class="ticks">
+      <li>Coverage % and gap ACR for every motion</li>
+      <li>Attached vs gap opportunities, named with their ACR</li>
+      <li>"Why this matters" context for each motion</li>
+      <li>Discipline-aware: your primary motions vs adjacent / hand-off</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="Motion coverage breakdown">
+    <img src="images/tracker-motions.png" alt="PULSE motion breakdown showing attached and gap opportunities with ACR" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: TERRITORY WHITESPACE ===== -->
+<section class="feature reverse" id="whitespace">
+  <div class="feature-text">
+    <div class="eyebrow">TERRITORY WHITESPACE</div>
+    <h2 class="feature-title">Where to build<br /><span class="grad">pipeline next</span></h2>
+    <p>
+      Whitespace turns your territory into an action queue. PULSE finds accounts with an
+      active opportunity but no matching motion (Attach Gaps) and accounts with no active
+      opportunity at all (Greenfield), then ranks them by uncovered pipeline and how soon
+      the anchor deal closes — and offers an AI-suggested attach play for each.
+    </p>
+    <ul class="ticks">
+      <li>Attach Gap vs Greenfield, grouped by territory</li>
+      <li>Prioritised by pipeline size and closing urgency</li>
+      <li>Names the exact deal(s) to attach a motion to</li>
+      <li>One-click "Suggest attach play" for a grounded next step</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="Territory whitespace">
+    <img src="images/tracker-whitespace.png" alt="PULSE territory whitespace with attach gaps, priority and closing timing" onerror="this.closest('.shot').classList.add('shot-empty')" />
   </figure>
 </section>
 
@@ -178,18 +273,65 @@
     <h2 class="feature-title">Your Connect,<br /><span class="grad">evidenced all year</span></h2>
     <p>
       Add evidence whenever it happens — a win, a workshop, a piece of feedback. PULSE
-      keeps it in a per-user store and, on demand, writes your Connect prose over a
-      window you choose, mapped to the goal framework. No scramble in review season.
+      keeps it in a per-user store and surfaces a financial summary, ACR by customer, and
+      an evidence timeline mapped to the goal framework — so your impact is building all
+      year, not the night before review.
     </p>
     <ul class="ticks">
       <li>Continuous evidence capture — add items any time</li>
-      <li>AI-written Connect prose classified to goals 1–5</li>
-      <li>Generate over any lookback window you pick</li>
-      <li>Save snapshots you can revisit and refine</li>
+      <li>Financial summary and ACR-by-customer, deduped per opportunity</li>
+      <li>Evidence timeline grouped by goals 1–5</li>
+      <li>Generate over any lookback window you pick — no set dates</li>
     </ul>
   </div>
   <figure class="shot" data-label="FY Connect generator">
     <img src="images/connect.png" alt="PULSE FY Connect generator" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: CONNECT NARRATIVE ===== -->
+<section class="feature" id="connect-write">
+  <div class="feature-text">
+    <div class="eyebrow">AI-WRITTEN CONNECT</div>
+    <h2 class="feature-title">Reflect &amp; plan,<br /><span class="grad">written for you</span></h2>
+    <p>
+      Press generate and PULSE writes your Connect from your evidence — results you
+      delivered and how, setbacks and what you learned, goals for the period ahead, and
+      the behaviours that will get you there. Every claim is grounded in a real logged
+      activity, with character counts and copy buttons ready for the review form.
+    </p>
+    <ul class="ticks">
+      <li>"Reflect on the past" and "Plan for the future" in your voice</li>
+      <li>Grounded only in evidence you've logged — no invention</li>
+      <li>Character counts tuned to the Connect form limits</li>
+      <li>Copy each answer, or the entire Connect, in one click</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="AI-written Connect">
+    <img src="images/connect-narrative.png" alt="PULSE AI-written Connect — reflect on the past and plan for the future" onerror="this.closest('.shot').classList.add('shot-empty')" />
+  </figure>
+</section>
+
+<!-- ===== FEATURE: CONNECT GOALS ===== -->
+<section class="feature reverse" id="connect-goals">
+  <div class="feature-text">
+    <div class="eyebrow">EVIDENCE BY GOAL</div>
+    <h2 class="feature-title">Mapped to your<br /><span class="grad">goals 1–5</span></h2>
+    <p>
+      Under the prose, every piece of evidence is classified to a Connect goal and laid
+      out as a "What / How" summary plus a full evidence table — customer, activity, type,
+      date, source, HoK and ACR. It's the receipts behind the narrative, so a manager can
+      see the impact at a glance and you can defend every line.
+    </p>
+    <ul class="ticks">
+      <li>Evidence auto-classified to goals 1–5</li>
+      <li>"What (results)" and "How (behaviours)" per goal</li>
+      <li>Full evidence table with HoK and ACR badges</li>
+      <li>Copy the What or How straight into your review</li>
+    </ul>
+  </div>
+  <figure class="shot" data-label="Evidence mapped by goal">
+    <img src="images/connect-goals.png" alt="PULSE Connect evidence mapped to a goal with What/How and evidence table" onerror="this.closest('.shot').classList.add('shot-empty')" />
   </figure>
 </section>
 
