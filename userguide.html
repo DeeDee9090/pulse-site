@@ -71,36 +71,37 @@
     <ul>
       <li>An <strong>active MSX seat</strong> — PULSE only ever shows <em>your own</em> MSX (Dataverse) data, so you must be a licensed MSX user. If you use MSX today, you're all set; if you can sign in but see no data, this is almost always why.</li>
       <li>A <strong>Microsoft 365 Copilot</strong> licence (the agent runs inside Copilot).</li>
-      <li><strong>Custom app upload</strong> (sideloading) enabled for you in Teams — most Microsoft SEs already have this. If not, see “If neither option works” below.</li>
+      <li><strong>Custom app upload</strong> (sideloading) — PULSE isn't in the org app catalogue yet, so adding it via Teams / Copilot is the only way in right now. This is enabled for SEs on the corporate tenant, so you're all set.</li>
     </ul>
   </div>
 
   <h3>Step 1 — Get PULSE added to your Teams</h3>
   <p>There are two ways. <strong>Option A is the quickest</strong> and needs no file.</p>
 
-  <h4>Option A — Ask Daphne to add you as a collaborator <span class="tag">RECOMMENDED · NO FILE</span></h4>
+  <h4>Option A — Preview it in Teams <span class="tag">RECOMMENDED · NO FILE</span></h4>
+  <p>Everyone on the PULSE launch email has already been added as a collaborator, so you can go straight in:</p>
   <ol>
-    <li><a href="mailto:dboateng@microsoft.com?subject=PULSE%20access%20-%20please%20add%20me%20as%20collaborator&amp;body=Hi%20Daphne%2C%20please%20add%20me%20as%20a%20collaborator%20on%20the%20PULSE%20agent%20so%20I%20can%20Preview%20it%20in%20Teams.%20Thanks!">Email Daphne your work address</a> and ask to be added as a collaborator on the PULSE agent. (She adds you in the Teams Developer Portal — takes seconds.)</li>
-    <li>Once added, go to <strong><a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com</a> → Apps</strong> and open <strong>PULSE</strong>.</li>
+    <li>Go to <strong><a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com</a> → Apps</strong> and open <strong>PULSE</strong>.</li>
     <li>Click <strong>Preview in Teams</strong>. PULSE installs straight into your Teams / Copilot — <em>no download or upload</em>.</li>
+    <li>Don't see PULSE listed? You may not be a collaborator yet — <a href="mailto:dboateng@microsoft.com?subject=PULSE%20access%20-%20please%20add%20me%20as%20collaborator&amp;body=Hi%20Daphne%2C%20I%20can't%20see%20PULSE%20in%20dev.teams.microsoft.com.%20Please%20add%20me%20as%20a%20collaborator%20on%20the%20PULSE%20agent.%20Thanks!">email Daphne</a> and you'll be added in seconds.</li>
   </ol>
 
   <h4>Option B — Upload the package yourself</h4>
   <ol>
-    <li>Ask Daphne for the package file <code>PULSE-agent-v1.0.55.zip</code> and save it (don't unzip it).</li>
+    <li>Ask Daphne for the package file <code>PULSE-agent.zip</code> and save it (don't unzip it).</li>
     <li>In <strong>Microsoft Teams</strong>, open <strong>Apps</strong> (left rail, or the <strong>···</strong> menu) → <strong>Manage your apps</strong>.</li>
     <li>Click <strong>Upload an app</strong> → <strong>Upload a custom app</strong>, pick the <code>.zip</code>, and confirm <strong>Add</strong>.</li>
   </ol>
 
   <p>Either way, PULSE now appears in <strong>Microsoft 365 Copilot</strong> in your agents list. Pin it so it's easy to find.</p>
   <div class="callout">
-    <strong>If neither option works</strong> — “Preview in Teams” or “Upload a custom app” is greyed out or missing — your tenant hasn't enabled custom app upload for you. <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">Email Daphne</a>; PULSE can instead be published to the org app catalogue by a Teams admin, after which you'll simply find “PULSE” in <strong>Apps</strong> with nothing to install.
+    <strong>Don't see “Preview in Teams” or “Upload a custom app”?</strong> If PULSE isn't listed under <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a>, you're likely not a collaborator yet — <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">email Daphne</a> to be added.
   </div>
 
   <h3>Step 2 — Link your account (one time)</h3>
   <ol>
-    <li>Open the <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">PULSE link page</a>, sign in with your Microsoft account, and copy your one-time code — it looks like <code>ABCD-EFGH</code>.</li>
-    <li>Open <strong>PULSE</strong> in Copilot and say <em>“generate my report.”</em> When it asks, paste your code. You only ever link once.</li>
+    <li>Open <strong>PULSE</strong> in Copilot and say <em>“generate my report.”</em> The agent is conversational — it'll walk you through linking the first time and ask for your one-time code.</li>
+    <li>When it asks, open the <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">PULSE link page</a>, sign in with your Microsoft account, and copy your code — it looks like <code>ABCD-EFGH</code>. Paste it back into the chat. You only ever link once.</li>
   </ol>
 
   <h3>Step 3 — Generate &amp; save</h3>
@@ -142,9 +143,10 @@
   <p>PULSE watches the Cloud Accelerate Factory data and flags opportunities that are eligible but not nominated, stalled, or declined.</p>
   <h3>Two ways to nominate</h3>
   <ul>
-    <li><strong>Nominate via Azure Offer Navigator</strong> — PULSE assembles the full packet (fields laid out in the same sections as the AON form, with the specialist and co-sell partner auto-resolved). Copy it in, review, and submit. <em>PULSE never submits for you.</em></li>
-    <li><strong>See example</strong> — preview a sample packet to see exactly what you'll get before a real opportunity qualifies.</li>
+    <li><strong>Nominate via Azure Offer Navigator</strong> — PULSE assembles a copy-ready packet (fields laid out in the same sections as the AON form, with the specialist and co-sell partner auto-resolved). Copy it into Azure Offer Navigator, review, and submit. <em>PULSE never submits for you.</em></li>
+    <li><strong>Nominate with the caf-nominate skill</strong> — hand off to the local <code>caf-nominate</code> Copilot skill, which drives the submission for you from the same packet. Handy when you'd rather not copy fields across by hand.</li>
   </ul>
+  <div class="callout">Not sure what you'll get? Use <strong>Preview example packet</strong> on any eligible opportunity to see an illustrative, fully-assembled nomination before a real one qualifies — it's a sample, not a submission.</div>
 
   <h2 id="connect">6 · FY Connect</h2>
   <p>Capture evidence continuously through the year, then generate your Connect prose on demand.</p>
@@ -190,11 +192,11 @@
 
   <h2 id="faq">FAQ</h2>
   <h3>Do I need to install anything?</h3>
-  <p>No desktop app — but because PULSE isn't in the company app store yet, you add it once through Microsoft 365 Copilot. The quickest way is to ask Daphne to add you as a <strong>collaborator</strong>, then click <strong>Preview in Teams</strong> from <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a> — no file needed. Full steps in <a href="#start">Get started</a>.</p>
+  <p>No desktop app — but because PULSE isn't in the company app store yet, you add it once through Microsoft 365 Copilot. If you're on the launch email you've already been added as a <strong>collaborator</strong>, so just open <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a>, open <strong>PULSE</strong>, and click <strong>Preview in Teams</strong> — no file needed. Full steps in <a href="#start">Get started</a>.</p>
   <h3>How do I actually get the agent?</h3>
-  <p><strong>Option A (recommended):</strong> ask Daphne to add you as a collaborator, then open <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps → PULSE → Preview in Teams</a>. <strong>Option B:</strong> ask her for <code>PULSE-agent-v1.0.55.zip</code> and upload it via <em>Teams → Apps → Manage your apps → Upload a custom app</em>. See <a href="#start">Get started</a>.</p>
-  <h3>“Preview in Teams” / the upload option is greyed out — what now?</h3>
-  <p>Your tenant hasn't enabled custom app upload (sideloading) for you — this affects both options. <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">Email Daphne</a>; the agent can be published to the org app catalogue by a Teams admin instead, so you'll just find “PULSE” in Apps with nothing to install.</p>
+  <p><strong>Option A (recommended):</strong> you're already a collaborator, so open <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps → PULSE → Preview in Teams</a>. <strong>Option B:</strong> ask Daphne for <code>PULSE-agent.zip</code> and upload it via <em>Teams → Apps → Manage your apps → Upload a custom app</em>. See <a href="#start">Get started</a>.</p>
+  <h3>“Preview in Teams” / the upload option isn't showing — what now?</h3>
+  <p>If PULSE isn't listed under <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a>, you're most likely not a collaborator yet. <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">Email Daphne</a> and you'll be added in seconds.</p>
   <h3>Can other SEs see my data?</h3>
   <p>No. You sign in with your Microsoft account and PULSE only ever shows your own territory. Pages stay empty until <em>you</em> save a report.</p>
   <h3>Will it edit MSX without me?</h3>
