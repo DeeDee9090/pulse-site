@@ -57,13 +57,27 @@
   </div>
 
   <h2 id="start">1 · Open PULSE</h2>
+  <div class="callout">
+    <strong>Access is group-managed.</strong> PULSE Production access comes from membership of the <strong>PULSE Production Users</strong> security group. Individual sharing in the Copilot Studio agent window is not required. If you are not already in the group, request access through
+    <a href="https://myaccess.microsoft.com/@microsoft.onmicrosoft.com#/access-packages/0dbd2a71-1cb3-450d-a320-0b40c3ac8f8f" target="_blank" rel="noopener"><strong>PULSE Production Access</strong></a>.
+  </div>
   <ol>
-    <li>Open the <a href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener"><strong>PULSE Production Power App</strong></a>.</li>
-    <li>If Microsoft asks you to choose an account, select your corporate work account.</li>
-    <li>Wait for the header to show your name and <strong>Systems healthy</strong>.</li>
-    <li>Confirm the banner says delegated MSX actions run as the signed-in user.</li>
+    <li>If you are not already a PULSE user, request <a href="https://myaccess.microsoft.com/@microsoft.onmicrosoft.com#/access-packages/0dbd2a71-1cb3-450d-a320-0b40c3ac8f8f" target="_blank" rel="noopener"><strong>PULSE Production Access</strong></a> and provide the short business justification.</li>
+    <li>The request is approved automatically. Allow a short period for Entra to add you to <strong>PULSE Production Users</strong>.</li>
+    <li>Open the <a href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener"><strong>PULSE Production Power App</strong></a>. The app link itself does not redirect users to My Access.</li>
+    <li>If Microsoft asks you to choose an account, select your corporate work account and accept any one-time connector consent.</li>
+    <li>Wait for the header to show your name and <strong>Systems healthy</strong>, then confirm the banner says delegated MSX actions run as the signed-in user.</li>
   </ol>
   <div class="callout"><strong>Your identity matters:</strong> reads and guarded MSX writes use your signed-in identity. PULSE does not substitute an owner identity for your own user context.</div>
+  <h3>Access, licensing and lifecycle</h3>
+  <ul>
+    <li><strong>Initial access:</strong> any Microsoft internal member can request the PULSE access package. Eligible requests are approved automatically.</li>
+    <li><strong>What the request grants:</strong> Entra adds the user to <strong>PULSE Production Users</strong>; the group supplies the Power App, Dataverse, flow and agent runtime access.</li>
+    <li><strong>Licensing:</strong> users need an active corporate account, a valid entitlement to run the Production Power App and Dataverse, and an active MSX identity with the permissions required for the records and actions they use. An MSX seat alone does not create PULSE or Power Platform access.</li>
+    <li><strong>First launch:</strong> accept any one-time delegated connector or WorkIQ consent prompt while signed in with your own Microsoft work account.</li>
+    <li><strong>Renewal:</strong> access lasts 365 days. Users can request a self-service extension; otherwise the ELM-managed assignment expires and Entra removes the group access.</li>
+    <li><strong>Current pilot:</strong> existing pilot members remain unchanged while the new access package is tested; future joiners should use the access package.</li>
+  </ul>
 
   <h2 id="navigation">2 · Navigation and operating model</h2>
   <ul>
@@ -208,6 +222,15 @@
     <li>Create the correct SE-owned POC/Pilot only when a genuine new phase of technical delivery has started.</li>
     <li>Use explicit exception reasons and the required FY27 hashtag only when the attach is genuinely not applicable.</li>
   </ul>
+  <h3>Join or leave an opportunity or milestone team</h3>
+  <ol>
+    <li>Open <strong>Portfolio</strong>, select the account, then open the required Opportunity Workspace.</li>
+    <li>Select <strong>Join this deal team</strong>, <strong>Leave this deal team</strong>, <strong>Join milestone team</strong> or <strong>Leave milestone team</strong>.</li>
+    <li>For an opportunity-level action, choose whether to change the opportunity team only, one selected milestone team, or both.</li>
+    <li>Review the exact opportunity, milestone and scope. Joining can affect Role-Based Incentive attribution, so confirm only when you are actively contributing.</li>
+    <li>Select <strong>Confirm and join</strong> or <strong>Confirm and leave</strong>. MSX evaluates the request using your existing permissions.</li>
+  </ol>
+  <div class="callout"><strong>Self-only protection:</strong> PULSE can add or remove only the signed-in user. It cannot remove the previous owner, change another person’s membership or bypass MSX permissions. Leaving a team removes your selected membership; it does not delete the opportunity, milestone, evidence or another user’s access.</div>
   <p><a class="text-link" href="portfolio.html">Open the complete Portfolio &amp; Opportunity Workspace deep dive →</a></p>
 
   <h2 id="connect">7 · Connect — complete workflow <span class="tag">DETAILED</span></h2>
