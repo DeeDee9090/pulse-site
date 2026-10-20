@@ -3,226 +3,297 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PULSE — User Guide</title>
-<meta name="description" content="How to get started with PULSE and use each part: Weekly Milestones, SE Execution Tracker, CAF nominations, and the FY Connect generator." />
+<title>PULSE Power App — Complete User Guide</title>
+<meta name="description" content="Complete guide to PULSE Power Apps: Weekly Milestones, PULSE Tracker, Portfolio, Connect, Reports, guarded MSX actions and PULSE Copilot." />
 <link rel="stylesheet" href="assets/site.css" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolyline points='2,20 12,20 17,8 22,32 27,14 32,24 38,20' fill='none' stroke='%2300d4ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 </head>
 <body>
-
-<!-- ===== animated pulse-line background ===== -->
 <div class="bg-lines" aria-hidden="true">
   <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
-    <polyline fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-      points="0,150 220,150 260,150 285,60 315,240 345,110 375,150 560,150 600,150 625,80 655,220 685,130 715,150 900,150 940,150 965,55 995,245 1025,120 1055,150 1200,150" />
-    <polyline fill="none" stroke="#8764b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"
-      points="0,200 180,200 220,200 245,130 275,270 305,170 335,200 520,200 560,200 585,140 615,260 645,180 675,200 860,200 900,200 925,120 955,280 985,160 1015,200 1200,200" />
-    <polyline fill="none" stroke="#0078d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"
-      points="0,100 200,100 240,100 265,30 295,190 325,70 355,100 540,100 580,100 605,40 635,180 665,90 695,100 880,100 920,100 945,25 975,195 1005,80 1035,100 1200,100" />
+    <polyline fill="none" stroke="#00d4ff" stroke-width="2" points="0,150 220,150 285,60 315,240 345,110 375,150 560,150 625,80 655,220 685,130 715,150 1200,150" />
+    <polyline fill="none" stroke="#8764b8" stroke-width="2" opacity="0.7" points="0,200 180,200 245,130 275,270 305,170 335,200 520,200 585,140 615,260 645,180 675,200 1200,200" />
   </svg>
 </div>
 
 <header class="nav" id="top">
   <a class="brand" href="index.html" aria-label="PULSE home">
-    <svg class="brand-mark" viewBox="0 0 160 40" width="34" height="20" aria-hidden="true"><polyline points="0,20 30,20 42,6 54,34 66,14 78,26 90,20 160,20" fill="none" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="brand-mark" viewBox="0 0 160 40" width="34" height="20" aria-hidden="true"><polyline points="0,20 30,20 42,6 54,34 66,14 78,26 90,20 160,20" fill="none" stroke="#00d4ff" stroke-width="3"/></svg>
     <span class="brand-text">PULSE</span>
   </a>
   <nav class="nav-links" aria-label="Primary">
-    <a href="index.html#overview">OVERVIEW</a>
-    <a href="index.html#milestones">FEATURES</a>
-    <a href="#start">GET STARTED</a>
-    <a href="userguide.html">USER GUIDE</a>
+    <a href="#start">START</a>
+    <a href="#weekly">WEEKLY</a>
+    <a href="#tracker">TRACKER</a>
+    <a href="#connect">CONNECT</a>
+    <a href="#safety">SAFETY</a>
   </nav>
-  <a class="btn btn-grad nav-cta" href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">OPEN PULSE</a>
+  <a class="btn btn-grad nav-cta" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">OPEN PULSE</a>
   <button class="nav-burger" id="navBurger" aria-label="Menu">☰</button>
 </header>
 
 <section class="guide-hero">
-  <div class="eyebrow center">USER GUIDE</div>
-  <h1>Getting the most out of <span class="grad">PULSE</span></h1>
-  <p>Everything you need to link your account, generate your first report, and use each part of the dashboard.</p>
+  <div class="eyebrow center">PULSE POWER APP · COMPLETE USER GUIDE</div>
+  <h1>From weekly evidence to <span class="grad">measurable impact</span></h1>
+  <p>PULSE brings your signed-in MSX portfolio, Microsoft 365 evidence, execution priorities and FY27 Connect preparation into one Power App.</p>
   <div class="toc">
-    <a href="#start">Get started</a>
-    <a href="#agent">The Teams agent</a>
-    <a href="#milestones">Weekly Milestones</a>
-    <a href="#tracker">Execution Tracker</a>
-    <a href="#caf">CAF nominations</a>
-    <a href="#connect">FY Connect</a>
-    <a href="#how">How it works</a>
-    <a href="#safety">Safety &amp; trust</a>
+    <a href="#start">Open PULSE</a>
+    <a href="#navigation">Navigation</a>
+    <a href="#weekly">Weekly Milestones</a>
+    <a href="#tracker">PULSE Tracker</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#connect">Connect</a>
+    <a href="#reports">Reports</a>
+    <a href="#copilot">PULSE Copilot</a>
+    <a href="#safety">Safety</a>
     <a href="#faq">FAQ</a>
   </div>
 </section>
 
 <main class="guide">
-
   <div class="callout">
-    <strong>What PULSE is:</strong> a Microsoft-internal command centre for Solution Engineers — a Teams / Copilot
-    agent plus a web dashboard. It reads your MSX pipeline and Microsoft 365 activity and turns them into your weekly
-    report, motion scorecard, CAF nominations, and FY Connect. You sign in with your Microsoft account and only ever
-    see your own territory.
+    <strong>PULSE is now a Power App.</strong> There is no agent package, sideloading step or link code. Open the app, select your work account if prompted, and PULSE loads the portfolio and evidence available to the signed-in user.
   </div>
 
-  <h2 id="start">1 · Get started <span class="tag">ONE-TIME SETUP</span></h2>
-  <p class="lead">PULSE isn't in the company app store yet, so getting the agent is a quick <strong>one-time</strong> setup — about five minutes. After that, everything runs from Teams and the dashboard.</p>
-
-  <div class="callout">
-    <strong>Before you start, you'll need:</strong>
-    <ul>
-      <li>An <strong>active MSX seat</strong> — PULSE only ever shows <em>your own</em> MSX (Dataverse) data, so you must be a licensed MSX user. If you use MSX today, you're all set; if you can sign in but see no data, this is almost always why.</li>
-      <li>A <strong>Microsoft 365 Copilot</strong> licence (the agent runs inside Copilot).</li>
-      <li><strong>Custom app upload</strong> (sideloading) — PULSE isn't in the org app catalogue yet, so adding it via Teams / Copilot is the only way in right now. This is enabled for SEs on the corporate tenant, so you're all set.</li>
-    </ul>
-  </div>
-
-  <h3>Step 1 — Get PULSE added to your Teams</h3>
-  <p>There are two ways. <strong>Option A is the quickest</strong> and needs no file.</p>
-
-  <h4>Option A — Preview it in Teams <span class="tag">RECOMMENDED · NO FILE</span></h4>
-  <p>Everyone on the PULSE launch email has already been added as a collaborator, so you can go straight in:</p>
+  <h2 id="start">1 · Open PULSE</h2>
   <ol>
-    <li>Go to <strong><a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com</a> → Apps</strong> and open <strong>PULSE</strong>.</li>
-    <li>Click <strong>Preview in Teams</strong>. PULSE installs straight into your Teams / Copilot — <em>no download or upload</em>.</li>
-    <li>Don't see PULSE listed? You may not be a collaborator yet — <a href="mailto:dboateng@microsoft.com?subject=PULSE%20access%20-%20please%20add%20me%20as%20collaborator&amp;body=Hi%20Daphne%2C%20I%20can't%20see%20PULSE%20in%20dev.teams.microsoft.com.%20Please%20add%20me%20as%20a%20collaborator%20on%20the%20PULSE%20agent.%20Thanks!">email Daphne</a> and you'll be added in seconds.</li>
+    <li>Open the <a href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener"><strong>PULSE Production Power App</strong></a>.</li>
+    <li>If Microsoft asks you to choose an account, select your corporate work account.</li>
+    <li>Wait for the header to show your name and <strong>Systems healthy</strong>.</li>
+    <li>Confirm the banner says delegated MSX actions run as the signed-in user.</li>
+  </ol>
+  <div class="callout"><strong>Your identity matters:</strong> reads and guarded MSX writes use your signed-in identity. PULSE does not substitute an owner identity for your own user context.</div>
+
+  <h2 id="navigation">2 · Navigation and operating model</h2>
+  <ul>
+    <li><strong>Weekly Milestones</strong> — retrieve evidence, decide where it belongs, generate a weekly draft, and preview guarded MSX updates.</li>
+    <li><strong>PULSE Tracker</strong> — prioritise this week, review opportunities, discover whitespace, monitor execution measures and manage Technical Close readiness.</li>
+    <li><strong>Portfolio</strong> — inspect account hierarchies, opportunities, milestones, ownership, deal-team membership and opportunity workspaces.</li>
+    <li><strong>Connect</strong> — prepare the scheduled conversation, verify evidence, align it to goals and workstreams, and generate versioned Connect narratives.</li>
+    <li><strong>Reports</strong> — revisit saved Weekly and Connect outputs.</li>
+    <li><strong>PULSE Copilot</strong> — ask read-only questions about status, evidence gaps, blockers and next-best actions from any page.</li>
+  </ul>
+
+  <h2 id="videos">3 · Product walkthroughs</h2>
+  <div class="video-grid">
+    <article class="video-card">
+      <video controls preload="metadata" poster="images/milestones.png"><source src="videos/weekly-milestones-walkthrough.mp4" type="video/mp4" /></video>
+      <h3>Weekly Milestones</h3>
+      <p>Evidence retrieval, milestone cards, review, editing and guarded CRM preparation.</p>
+    </article>
+    <article class="video-card">
+      <video controls preload="metadata" poster="images/tracker.png"><source src="videos/pulse-tracker-walkthrough.mp4" type="video/mp4" /></video>
+      <h3>PULSE Tracker</h3>
+      <p>This Week, execution measures, motion drill-down, whitespace, attach plays and CAF.</p>
+    </article>
+    <article class="video-card">
+      <video controls preload="metadata" poster="images/connect.png"><source src="videos/connect-walkthrough.mp4" type="video/mp4" /></video>
+      <h3>Connect</h3>
+      <p>Evidence, goals, What/How narratives and the generated Connect output.</p>
+    </article>
+  </div>
+  <p class="media-note">All product media uses fabricated customers and illustrative values. No live customer or employee data is published here.</p>
+
+  <h2 id="weekly">4 · Weekly Milestones</h2>
+  <p class="lead">Weekly is a four-step evidence workflow. It does not begin by writing commentary—it begins by proving what happened and deciding where that work belongs.</p>
+
+  <h3>Step 1 — Select dates and retrieve</h3>
+  <ol>
+    <li>Select the fiscal year and a completed reporting week. Use a custom range only for catch-up and keep it within the allowed window.</li>
+    <li>Select <strong>Refresh portfolio and retrieve</strong>. PULSE refreshes the signed-in MSX snapshot and runs evidence retrieval for those exact dates.</li>
+    <li>Use the retrieval status card to see progress, coverage and any explicit diagnostic.</li>
   </ol>
 
-  <h4>Option B — Upload the package yourself</h4>
+  <h3>Step 2 — Review and route evidence</h3>
+  <p>For each substantive item, choose the correct destination:</p>
+  <ul>
+    <li><strong>Weekly / MSX</strong> — qualified customer activity linked to a genuine opportunity and active milestone.</li>
+    <li><strong>Account holding</strong> — real customer work where the account is known but legitimate pipeline does not yet exist.</li>
+    <li><strong>Connect</strong> — material impact that should contribute to Connect rather than customer pipeline.</li>
+    <li><strong>Exclude</strong> — irrelevant, passive, duplicate or incorrectly attributed activity.</li>
+  </ul>
+  <div class="callout"><strong>No pipeline guessing:</strong> never attach evidence to a convenient but unrelated opportunity. Account holding preserves genuine customer work until the account team qualifies the correct opportunity.</div>
+
+  <h3>Evidence classifications</h3>
+  <ul>
+    <li><strong>Direct</strong> — customer-facing activity with direct customer participation or evidence.</li>
+    <li><strong>Partner</strong> — work delivered with or through a partner.</li>
+    <li><strong>Internal</strong> — internal work that materially advanced or unblocked the customer outcome.</li>
+    <li><strong>Cross-Territory</strong> — contribution to customer work outside your aligned territory.</li>
+    <li><strong>Unclassified</strong> — not ready for guarded MSX routing until you choose the correct classification.</li>
+  </ul>
+  <p>Classification explains provenance; it does not automatically veto a legitimate MSX update. Every classified item still goes through explicit preview and confirmation.</p>
+
+  <h3>Step 3 — Generate the draft</h3>
+  <p>After approving evidence, generate the Weekly draft. PULSE consolidates duplicate signals, keeps supporting context beneath the material contribution, and drafts milestone progress from the verified evidence.</p>
+
+  <h3>Step 4 — Review milestone updates</h3>
+  <ul>
+    <li>Filter by territory, customer, health, commitment and evidence source.</li>
+    <li>Review progress, decisions, blockers, next steps and evidence lineage.</li>
+    <li>Create active HVA tasks with an explicit duration (15–120 minutes, default 30).</li>
+    <li>Use the Technical Close prompt when a Stage 2 or Stage 3 opportunity requires a living plan.</li>
+    <li>Select <strong>Review milestone updates</strong> to preview the exact guarded MSX operations.</li>
+  </ul>
+  <div class="callout"><strong>Nothing writes silently.</strong> PULSE shows the account, opportunity, milestone, comment and task operation before confirmation. Direct creation reads the task back to verify the stored duration.</div>
+
+  <h2 id="tracker">5 · PULSE Tracker</h2>
+  <p class="lead">Tracker is the execution workspace. It uses one evidence-led Stage 2–3 population, then shows different operational views of that same signed-in scope.</p>
+
+  <h3>Territory lenses</h3>
+  <ul>
+    <li><strong>My aligned territory</strong> — the accounts and opportunities aligned to your saved territory model.</li>
+    <li><strong>Cross-territory deal team</strong> — opportunities where you contribute through deal-team membership outside the aligned patch.</li>
+  </ul>
+
+  <h3>This Week</h3>
+  <p>The default tab turns execution gaps into a prioritised action queue:</p>
+  <ul>
+    <li>Join missing milestone teams.</li>
+    <li>Action Factory-eligible milestones.</li>
+    <li>Own or create an appropriate POC/Pilot milestone.</li>
+    <li>Start or plan ahead for Technical Close.</li>
+    <li>Address Database or Security attach gaps.</li>
+    <li>Add HVA evidence to owned active POC/Pilot milestones.</li>
+  </ul>
+  <p><strong>Focus First</strong> ranks the highest-value opportunities with open actions. One opportunity can legitimately appear in several action categories.</p>
+
+  <h3>Opportunity Review</h3>
+  <p>Use this tab for structured review of active opportunities: ownership, milestone-team coverage, POC/Pilot state, HVA evidence, Technical Win coverage, attach posture and orchestration prerequisites.</p>
+
+  <h3>Opportunity Radar</h3>
+  <p>Radar helps discover or qualify work that is not yet represented correctly. It separates confirmed customer signals, qualification needs and account-level work without forcing premature pipeline creation.</p>
+
+  <h3>Execution measures and scorecard</h3>
+  <ul>
+    <li><strong>Milestone engagement</strong> — relevant milestone team coverage.</li>
+    <li><strong>POC/Pilot ownership</strong> — opportunities with an active POC/Pilot you own.</li>
+    <li><strong>High Value Activities</strong> — owned active POC/Pilot milestones with HVA evidence.</li>
+    <li><strong>Technical Win coverage</strong> — opportunity value supported by a Technical Win plan.</li>
+    <li><strong>Uncommitted to Committed</strong> — milestone progression with SE engagement.</li>
+    <li><strong>Database, Security and Factory attach</strong> — each uses its stated authoritative denominator and exception rules.</li>
+  </ul>
+  <p>The FY27 scorecard supports current-quarter, completed-quarter, year-to-date and weekly-progress views. Read the denominator on every card; PULSE deliberately avoids mixing different populations into one percentage.</p>
+
+  <h3>Technical Close lifecycle</h3>
+  <ul>
+    <li><strong>Plan ahead</strong> keeps Stage 2 opportunities visible before the close becomes urgent.</li>
+    <li><strong>Start now</strong> identifies Stage 3 opportunities without a saved plan.</li>
+    <li>POC/Pilot and ownership gaps remain visible as parallel prerequisites; they do not remove an opportunity from TCP visibility.</li>
+    <li>Draft, review, sign-off and handover are separate lifecycle states. The closing HVA remains a separate MSX task.</li>
+  </ul>
+
+  <h2 id="portfolio">6 · Portfolio and Opportunity Workspace</h2>
+  <ul>
+    <li>Browse parent and child account relationships without collapsing legally distinct organisations.</li>
+    <li>Open an opportunity workspace to inspect milestones, team membership, ownership and attached execution evidence.</li>
+    <li>Join eligible opportunity or milestone teams through guarded signed-in-user actions.</li>
+    <li>Review POC/Pilot ownership before taking or creating ownership.</li>
+    <li>Create the correct SE-owned POC/Pilot only when a genuine new phase of technical delivery has started.</li>
+    <li>Use explicit exception reasons and the required FY27 hashtag only when the attach is genuinely not applicable.</li>
+  </ul>
+
+  <h2 id="connect">7 · Connect — complete workflow <span class="tag">DETAILED</span></h2>
+  <p class="lead">Connect is not a one-click prose generator. It is a preparation workflow that combines the scheduled conversation, verified evidence, FY27 goal measures, financial context, workstreams, learning and your agreed forward position.</p>
+
+  <h3>Conversation and evidence window</h3>
+  <ul>
+    <li>PULSE discovers the First or Next Connect conversation date and shows the pre-read deadline.</li>
+    <li>First Connect uses the FY start through the conversation date; Next Connect begins after the previous completed conversation.</li>
+    <li>Coverage is assessed only through the last completed Sunday. The open current week and future dates are not shown as missing.</li>
+    <li>Use custom dates only when you deliberately need a different evidence window.</li>
+  </ul>
+
+  <h3>Preparation context</h3>
+  <p>The page keeps personal evidence separate from wider organisational context. Dashboard colours can inform the discussion, but must not be represented as an individual performance score.</p>
+  <ul>
+    <li>Review the recommended conversation flow and the FY27 Connect/SMART-goal source guidance.</li>
+    <li>Confirm the required goal details and exactly three business bets.</li>
+    <li>Review the financial and execution summary, customer ACR and HVA/Technical Win records.</li>
+  </ul>
+
+  <h3>Needs your review</h3>
+  <p>Only genuinely new, material activity appears for review. Routine attendance, preparation and repeated programme lineage remain supporting context rather than separate achievements.</p>
   <ol>
-    <li>Ask Daphne for the package file <code>PULSE-agent.zip</code> and save it (don't unzip it).</li>
-    <li>In <strong>Microsoft Teams</strong>, open <strong>Apps</strong> (left rail, or the <strong>···</strong> menu) → <strong>Manage your apps</strong>.</li>
-    <li>Click <strong>Upload an app</strong> → <strong>Upload a custom app</strong>, pick the <code>.zip</code>, and confirm <strong>Add</strong>.</li>
+    <li>Choose the contribution type.</li>
+    <li>Choose the related FY27 goal or mark it as supporting evidence only.</li>
+    <li>Choose the Connect workstream.</li>
+    <li>Verify or exclude the evidence.</li>
+  </ol>
+  <p>The section collapses automatically when there is nothing to action. Detailed evidence lists show five items per page.</p>
+
+  <h3>MSX attribution pending</h3>
+  <p>These are genuine customer contributions held safely at account level because a valid opportunity or milestone was not available at the time of review.</p>
+  <ol>
+    <li>Select <strong>Link MSX opportunity</strong> on the exact item.</li>
+    <li>PULSE carries that evidence record directly into the destination wizard—there is no need to remember its original week.</li>
+    <li>Choose <strong>Weekly / MSX</strong>, confirm the real account, then choose the genuine opportunity and active milestone.</li>
+    <li>If no legitimate opportunity exists, leave it in Account holding. Do not force an attribution.</li>
   </ol>
 
-  <p>Either way, PULSE now appears in <strong>Microsoft 365 Copilot</strong> in your agents list. Pin it so it's easy to find.</p>
-  <div class="callout">
-    <strong>Don't see “Preview in Teams” or “Upload a custom app”?</strong> If PULSE isn't listed under <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a>, you're likely not a collaborator yet — <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">email Daphne</a> to be added.
-  </div>
+  <h3>Verified evidence history</h3>
+  <p>Filter history by from/to date, contribution type, related goal and workstream. Use Clear filters to reset. Five results are shown per page with Previous/Next controls.</p>
 
-  <h3>Step 2 — Link your account (one time)</h3>
+  <h3>Goals, workstreams and learning</h3>
+  <ul>
+    <li>Open each FY27 goal to see its target, actual, calculation and supporting verified evidence.</li>
+    <li>Goal 2 attach evidence must have structured Factory, Database or Security proof or an explicit user confirmation.</li>
+    <li>Consolidated workstreams keep related achievements together and preserve recurring-programme lineage without inflating contribution counts.</li>
+    <li>Role/technical learning is kept separate from mandatory compliance evidence.</li>
+  </ul>
+
+  <h3>Generate and save</h3>
   <ol>
-    <li>Open <strong>PULSE</strong> in Copilot and say <em>“generate my report.”</em> The agent is conversational — it'll walk you through linking the first time and ask for your one-time code.</li>
-    <li>When it asks, open the <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">PULSE link page</a>, sign in with your Microsoft account, and copy your code — it looks like <code>ABCD-EFGH</code>. Paste it back into the chat. You only ever link once.</li>
+    <li>Review all evidence, goal measures and required manager inputs.</li>
+    <li>Select <strong>Generate Connect with AI</strong>.</li>
+    <li>Edit the narrative so it reflects your voice and agreed position.</li>
+    <li>Save the version. Saved Connects are private, versioned snapshots; later evidence changes do not rewrite an older saved version.</li>
   </ol>
 
-  <h3>Step 3 — Generate &amp; save</h3>
-  <p>Say <em>“save to dashboard.”</em> Your <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">dashboard</a> now populates — Milestones, Tracker, CAF and Connect all light up with your data.</p>
+  <h2 id="reports">8 · Reports</h2>
+  <p>Reports is the historical library for saved outputs. Use it to reopen the relevant period or version rather than regenerating an old result from today’s changed portfolio.</p>
 
-  <div class="callout">Until you've saved at least one report, the Tracker, Connect and Account pages stay empty on purpose — they'll unlock automatically once your first report is saved.</div>
+  <h2 id="copilot">9 · PULSE Copilot</h2>
+  <p>PULSE Copilot is read-only decision support. Ask:</p>
+  <span class="cmd">What needs my attention across PULSE, and why?</span>
+  <span class="cmd">Which retrieved evidence still needs review or attribution?</span>
+  <span class="cmd">Where are TCP, HoK, CRM or ownership actions unresolved?</span>
+  <p>It explains status, evidence and next actions, but it does not replace the guarded workflow or perform an MSX write.</p>
 
-  <h2 id="agent">2 · The Teams agent</h2>
-  <p>Once PULSE is added (section 1) and pinned, open it inside <strong>Microsoft 365 Copilot</strong>. The agent is where reports are generated. A few things you can say:</p>
-  <span class="cmd">generate my report</span>
-  <span class="cmd">save to dashboard</span>
-  <span class="cmd">what's changed since last week?</span>
-  <p>The agent dates each piece of evidence by when the activity actually happened (from the content), not when it was synced — so a fresh run can still add older-dated items correctly.</p>
-
-  <h2 id="milestones">3 · Weekly Milestones</h2>
-  <p>Your headline view. Each MSX milestone becomes a card with an AI-drafted weekly progress narrative built from your real meetings, emails and follow-ups.</p>
-  <h3>What you can do</h3>
+  <h2 id="safety">10 · Safety, identity and trust</h2>
   <ul>
-    <li><strong>Review &amp; edit</strong> the drafted progress before it's final.</li>
-    <li><strong>Classify evidence</strong> as Direct, Partner or Internal.</li>
-    <li><strong>Push to CRM</strong> — send the update back as a forecast comment (no date-stamp prefix; PULSE files it against the right fiscal week).</li>
-    <li><strong>Exclude a card</strong> from CRM push with the per-card toggle.</li>
-    <li><strong>Switch fiscal year</strong> with the FY selector; prior FYs appear only if they have saved reports.</li>
-  </ul>
-  <h3>CRM write-back</h3>
-  <p>When you push, PULSE <strong>appends</strong> a milestone or opportunity comment and creates any Hands-on-Keyboard (HoK) task activities — it never overwrites an existing comment or edits/closes an existing task, and it de-duplicates. Nothing is written to MSX until you approve it.</p>
-  <div class="callout"><strong>Other captured activity:</strong> work whose milestone is <em>closed or cancelled</em> isn't forced onto the wrong milestone. PULSE captures it separately, and you can post it as an <strong>opportunity-level forecast comment</strong> on an open opportunity instead — again, only on your confirmation.</div>
-
-  <h2 id="tracker">4 · SE Execution Tracker</h2>
-  <p>A scorecard across eight strategic SE motions, scoped to your discipline (via RAIN Qualifier 2, so a Data SE and an Apps SE see different primary motions).</p>
-  <ul>
-    <li><strong>Motion coverage</strong> — attach % and the ACR sitting in the gap for each motion.</li>
-    <li><strong>Territory whitespace</strong> — unattached opportunities with timing / priority and a fit-scored AI attach play per account.</li>
-    <li><strong>Cockpit brief</strong> — a short “where to spend today” summary.</li>
-  </ul>
-  <div class="callout">The solution-area filter and the whitespace cards all follow the same label, so what you filter is what you see.</div>
-
-  <h2 id="caf">5 · CAF nominations</h2>
-  <p>PULSE watches the Cloud Accelerate Factory data and flags opportunities that are eligible but not nominated, stalled, or declined.</p>
-  <h3>Two ways to nominate</h3>
-  <ul>
-    <li><strong>Nominate via Azure Offer Navigator</strong> — PULSE assembles a copy-ready packet (fields laid out in the same sections as the AON form, with the specialist and co-sell partner auto-resolved). Copy it into Azure Offer Navigator, review, and submit. <em>PULSE never submits for you.</em></li>
-    <li><strong>Nominate with the caf-nominate skill</strong> — hand off to the local <code>caf-nominate</code> Copilot skill, which drives the submission for you from the same packet. Handy when you'd rather not copy fields across by hand.</li>
-  </ul>
-  <div class="callout">Not sure what you'll get? Use <strong>Preview example packet</strong> on any eligible opportunity to see an illustrative, fully-assembled nomination before a real one qualifies — it's a sample, not a submission.</div>
-
-  <h2 id="connect">6 · FY Connect</h2>
-  <p>Capture evidence continuously through the year, then generate your Connect prose on demand.</p>
-  <ul>
-    <li><strong>Add evidence any time</strong> — wins, workshops, feedback. There's no fixed cadence.</li>
-    <li><strong>Generate over any window</strong> you choose; PULSE classifies evidence to the goal framework (goals 1–5) and writes the prose.</li>
-    <li><strong>Save snapshots</strong> to revisit and refine later.</li>
-  </ul>
-
-  <h2 id="how">7 · How PULSE works <span class="tag">ARCHITECTURE</span></h2>
-  <p class="lead">PULSE is <strong>hosted and per-user</strong> — there's nothing to install and every signed-in SE sees only their own pipeline. Here's the path a request takes:</p>
-  <div class="archflow">
-    <span class="node">🧑‍💻 You<small>Teams / M365 Copilot</small></span>
-    <span class="arrow">→</span>
-    <span class="node">🤖 PULSE agent<small>drafts your report</small></span>
-    <span class="arrow">→</span>
-    <span class="node">🛡️ Secure gateway<small>auth · rate-limit · audit</small></span>
-    <span class="arrow">→</span>
-    <span class="node">⚙️ PULSE APIs<small>Azure Functions</small></span>
-    <span class="arrow">→</span>
-    <span class="node">🗄️ Your MSX &amp; M365<small>Dataverse · mail · chat · calendar</small></span>
-    <span class="arrow">→</span>
-    <span class="node">📊 Your dashboards<small>MSAL sign-in</small></span>
-  </div>
-  <ul class="layers">
-    <li><strong>The agent</strong> is a Microsoft 365 declarative agent. It gathers your week and drafts the report, using Copilot's native Graph grounding to read <em>your</em> M365 activity (mail, chat, calendar).</li>
-    <li><strong>The secure gateway</strong> fronts every agent call — it authenticates the request, applies rate limits, and writes a central audit trail. The APIs reject any call that hasn't come through it.</li>
-    <li><strong>The PULSE APIs</strong> build and persist your report, hold your Connect evidence, compute territory whitespace, and stage CRM write-backs. Each caller is resolved through a single trusted-identity check (your sign-in, or a one-time link code).</li>
-    <li><strong>Your data</strong> lives in MSX (Dataverse). Reports and Connect evidence are stored <strong>per-user</strong>, keyed to your account id — so your data is isolated from every other SE's.</li>
-    <li><strong>The dashboards</strong> are a secure web app. You sign in with your Microsoft account and read only your own per-user data.</li>
-  </ul>
-
-  <h2 id="safety">8 · Safety, privacy &amp; trust</h2>
-  <p>PULSE is deliberately conservative about anything that touches MSX or your data:</p>
-  <ul>
-    <li><strong>The agent suggests; the dashboard writes.</strong> Every HoK activity, CRM comment and CAF nomination is surfaced for you to confirm — the agent never writes on its own.</li>
-    <li><strong>Append-only / create-only.</strong> Existing comments are never overwritten, existing tasks are never modified or closed, and duplicates are detected.</li>
-    <li><strong>Evidence is classified by who attended.</strong> A call with only a partner present (no customer) is <em>Partner</em>, never Direct — even when it concerns that customer. Partner and Internal evidence never auto-push to CRM.</li>
-    <li><strong>Per-user isolation.</strong> Every report and Connect store is keyed to your account id; you only ever see your own data.</li>
-    <li><strong>HoK is status-truth.</strong> Hands-on-Keyboard reflects your MSX records, never an inferred value.</li>
-    <li><strong>Active-contribution rule.</strong> Only evidence where <em>you</em> actively contributed is included.</li>
+    <li><strong>Signed-in-user execution:</strong> WorkIQ retrieval and MSX writes execute as the user taking the action.</li>
+    <li><strong>Explicit approval:</strong> guarded previews show the intended operation before any external write.</li>
+    <li><strong>No pipeline guessing:</strong> account holding is preferred to a false opportunity attribution.</li>
+    <li><strong>Evidence lineage:</strong> material contributions retain the underlying meeting, email or thread context.</li>
+    <li><strong>Per-user isolation:</strong> the app loads the signed-in user’s portfolio, evidence and saved outputs.</li>
+    <li><strong>AI review:</strong> generated content remains a draft until the user verifies it.</li>
   </ul>
 
   <h2 id="faq">FAQ</h2>
-  <h3>Do I need to install anything?</h3>
-  <p>No desktop app — but because PULSE isn't in the company app store yet, you add it once through Microsoft 365 Copilot. If you're on the launch email you've already been added as a <strong>collaborator</strong>, so just open <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a>, open <strong>PULSE</strong>, and click <strong>Preview in Teams</strong> — no file needed. Full steps in <a href="#start">Get started</a>.</p>
-  <h3>How do I actually get the agent?</h3>
-  <p><strong>Option A (recommended):</strong> you're already a collaborator, so open <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps → PULSE → Preview in Teams</a>. <strong>Option B:</strong> ask Daphne for <code>PULSE-agent.zip</code> and upload it via <em>Teams → Apps → Manage your apps → Upload a custom app</em>. See <a href="#start">Get started</a>.</p>
-  <h3>“Preview in Teams” / the upload option isn't showing — what now?</h3>
-  <p>If PULSE isn't listed under <a href="https://dev.teams.microsoft.com/apps" target="_blank" rel="noopener">dev.teams.microsoft.com → Apps</a>, you're most likely not a collaborator yet. <a href="mailto:dboateng@microsoft.com?subject=PULSE%20install%20help">Email Daphne</a> and you'll be added in seconds.</p>
-  <h3>Can other SEs see my data?</h3>
-  <p>No. You sign in with your Microsoft account and PULSE only ever shows your own territory. Pages stay empty until <em>you</em> save a report.</p>
-  <h3>Will it edit MSX without me?</h3>
-  <p>No. PULSE drafts and assembles; you review and approve every push, comment and nomination. Comments are only ever appended and tasks are only ever created — nothing existing is overwritten or closed.</p>
-  <h3>Where is my data stored?</h3>
-  <p>In MSX (Dataverse), stored per-user against your own account id — so it's isolated from other SEs. Your M365 activity is read live through Microsoft Copilot's Graph grounding when a report is generated; PULSE doesn't keep a separate copy of your mail or chat.</p>
-  <h3>Why is a page empty?</h3>
-  <p>You haven't saved a report yet. Generate one in the Teams agent and say “save to dashboard.”</p>
+  <h3>Do I need the old PULSE agent package or a link code?</h3>
+  <p>No. Those instructions are retired. Use the Production Power App link and your work account.</p>
+  <h3>Why is customer activity in Account holding?</h3>
+  <p>PULSE confirmed genuine work but could not safely link it to legitimate pipeline. Link it later when the correct opportunity exists.</p>
+  <h3>Why can’t I see a milestone?</h3>
+  <p>Check the account and opportunity hierarchy, active status, discipline relevance and your opportunity/milestone deal-team membership.</p>
+  <h3>Will PULSE write to MSX automatically?</h3>
+  <p>No. External actions require a preview and explicit confirmation and execute as the signed-in user.</p>
+  <h3>Why does Connect show evidence but not count it as an attributed customer outcome?</h3>
+  <p>Confirmed evidence can remain MSX-attribution pending until it is linked to a genuine opportunity and milestone.</p>
 
   <div class="guide-cta">
-    <a class="btn btn-grad btn-lg" href="https://agreeable-field-0bf300503.7.azurestaticapps.net/link" target="_blank" rel="noopener">🔗 Get your link code</a>
+    <a class="btn btn-grad btn-lg" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">▶ Open PULSE Production</a>
     <a class="btn btn-dark btn-lg" href="index.html">← Back to overview</a>
   </div>
 </main>
 
 <footer class="footer">
-  <div class="brand footer-brand"><svg class="brand-mark" viewBox="0 0 160 40" width="30" height="18" aria-hidden="true"><polyline points="0,20 30,20 42,6 54,34 66,14 78,26 90,20 160,20" fill="none" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text">PULSE</span></div>
+  <div class="brand footer-brand"><span class="brand-text">PULSE</span></div>
   <div class="footer-sub">Pipeline Updates, Lifecycle &amp; SE Execution</div>
-  <div class="footer-links">
-    <a href="index.html">Overview</a>
-    <a href="https://agreeable-field-0bf300503.7.azurestaticapps.net/" target="_blank" rel="noopener">Open dashboard</a>
-    <a href="mailto:dboateng@microsoft.com">Contact</a>
-  </div>
-  <div class="footer-fine">Microsoft-internal tool for Solution Engineers. Not an official Microsoft product.</div>
+  <div class="footer-links"><a href="index.html">Overview</a><a href="#videos">Videos</a><a href="mailto:dboateng@microsoft.com">Contact</a></div>
+  <div class="footer-fine">Microsoft-internal tool for Solution Engineers. Product media uses fabricated data.</div>
 </footer>
-
 <script src="assets/site.js"></script>
 </body>
 </html>

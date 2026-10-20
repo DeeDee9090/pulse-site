@@ -1,21 +1,22 @@
 # PULSE landing site
 
-A static landing page + user guide for **PULSE** — a command centre for Microsoft
-Solution Engineers (weekly milestone reporting, an 8-motion execution scorecard, CAF
-nominations, territory whitespace, and an FY Connect generator).
+A static landing page + complete Power Apps user guide for **PULSE** — a command
+centre for Microsoft Solution Engineers covering Weekly Milestones, PULSE Tracker,
+Portfolio workspaces, guarded MSX operations, CAF and FY27 Connect preparation.
 
 This repo contains **only the public marketing/onboarding site**. It holds no
-customer data, no API, and no credentials. The live dashboard (with sign-in and the
-Azure Functions API) is hosted separately on Azure Static Web Apps.
+customer data, no API, and no credentials. The live product is the separately
+deployed PULSE Production Power App and runs in the signed-in user's work context.
 
 ## Structure
 
 ```
-index.html        Landing page (hero, features, how-it-works, get-started)
-userguide.html    Step-by-step user guide
+index.html        Landing page (hero, features, videos, how-it-works, get-started)
+userguide.html    Complete Power Apps user guide with detailed Connect workflow
 assets/site.css   Styles
 assets/site.js    Small interactivity (mobile nav, scroll reveal)
 images/           Screenshots (see images/README.md)
+videos/           Fabricated-data product walkthroughs for Weekly, Tracker and Connect
 ```
 
 ## Run locally
