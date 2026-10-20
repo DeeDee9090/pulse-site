@@ -1,455 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PULSE — SE execution, in one pulse</title>
-<meta name="description" content="PULSE is the Power Apps command centre for Microsoft Solution Engineers: evidence-led weekly milestones, execution tracking, portfolio actions, guarded MSX workflows and FY27 Connect preparation." />
-<link rel="stylesheet" href="assets/site.css" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolyline points='2,20 12,20 17,8 22,32 27,14 32,24 38,20' fill='none' stroke='%2300d4ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PULSE — evidence-led SE execution</title>
+  <meta name="description" content="PULSE brings Weekly Milestones, execution priorities, opportunity workspaces and FY27 Connect into one signed-in Power App." />
+  <link rel="stylesheet" href="assets/site.css?v=20261020" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolyline points='2,20 12,20 17,8 22,32 27,14 32,24 38,20' fill='none' stroke='%2300a7b5' stroke-width='3'/%3E%3C/svg%3E" />
 </head>
 <body>
+  <div class="notice">PULSE Power App · Product media uses fabricated data only</div>
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="PULSE home">
+      <svg viewBox="0 0 120 32" aria-hidden="true"><polyline points="0,16 20,16 28,4 36,28 44,10 52,20 60,16 120,16" fill="none" stroke="#00d4ff" stroke-width="2.5"/></svg>
+      <span><b>PULSE</b><small>Pipeline Updates, Lifecycle &amp; SE Execution</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#weekly">WEEKLY</a>
+      <a href="#tracker">TRACKER</a>
+      <a href="#portfolio">PORTFOLIO</a>
+      <a href="#connect">CONNECT</a>
+      <a href="#videos">VIDEOS</a>
+      <a href="userguide.html">USER GUIDE</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">Open PULSE</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">☰</button>
+  </header>
 
-<!-- ===== animated pulse-line background ===== -->
-<div class="bg-lines" aria-hidden="true">
-  <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
-    <polyline fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-      points="0,150 220,150 260,150 285,60 315,240 345,110 375,150 560,150 600,150 625,80 655,220 685,130 715,150 900,150 940,150 965,55 995,245 1025,120 1055,150 1200,150">
-      <animate attributeName="stroke-dashoffset" from="0" to="-400" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="stroke-dasharray" values="400 0;400 0" dur="0.1s" fill="freeze" />
-    </polyline>
-    <polyline fill="none" stroke="#8764b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"
-      points="0,200 180,200 220,200 245,130 275,270 305,170 335,200 520,200 560,200 585,140 615,260 645,180 675,200 860,200 900,200 925,120 955,280 985,160 1015,200 1200,200">
-      <animate attributeName="stroke-dashoffset" from="0" to="-500" dur="8s" repeatCount="indefinite" />
-      <animate attributeName="stroke-dasharray" values="500 0;500 0" dur="0.1s" fill="freeze" />
-    </polyline>
-    <polyline fill="none" stroke="#0078d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"
-      points="0,100 200,100 240,100 265,30 295,190 325,70 355,100 540,100 580,100 605,40 635,180 665,90 695,100 880,100 920,100 945,25 975,195 1005,80 1035,100 1200,100">
-      <animate attributeName="stroke-dashoffset" from="0" to="-450" dur="7s" repeatCount="indefinite" />
-      <animate attributeName="stroke-dasharray" values="450 0;450 0" dur="0.1s" fill="freeze" />
-    </polyline>
-  </svg>
-</div>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">ONE CONNECTED SE WORKSPACE</div>
+        <h1>From evidence to action, <span>in one pulse.</span></h1>
+        <p>PULSE turns the signed-in user's MSX portfolio and Microsoft 365 evidence into weekly milestone updates, prioritised execution actions, opportunity workspaces and an evidence-grounded FY27 Connect.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">Open Production Power App</a>
+          <a class="btn btn-secondary btn-large" href="userguide.html">Read the complete guide</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Signed-in-user context</span><span>✓ Guarded MSX actions</span><span>✓ Evidence lineage</span>
+        </div>
+      </div>
+      <figure class="app-frame hero-frame">
+        <img src="images/current/home.png" alt="Current PULSE Power App home workspace using fabricated data" />
+      </figure>
+    </section>
 
-<!-- ===== NAV ===== -->
-<header class="nav" id="top">
-  <a class="brand" href="#top" aria-label="PULSE home">
-    <svg class="brand-mark" viewBox="0 0 160 40" width="34" height="20" aria-hidden="true">
-      <polyline points="0,20 30,20 42,6 54,34 66,14 78,26 90,20 160,20" fill="none" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <span class="brand-text">PULSE</span>
-  </a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="#overview">OVERVIEW</a>
-    <a href="#milestones">MILESTONES</a>
-    <a href="#tracker">TRACKER</a>
-    <a href="#connect">CONNECT</a>
-    <a href="#videos">VIDEOS</a>
-    <a href="userguide.html">USER GUIDE</a>
-  </nav>
-  <a class="btn btn-grad nav-cta" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">OPEN PULSE</a>
-  <button class="nav-burger" id="navBurger" aria-label="Menu">☰</button>
-</header>
+    <section class="journey section">
+      <div class="section-heading">
+        <div class="eyebrow">THE PULSE JOURNEY</div>
+        <h2>One workflow, six connected workspaces</h2>
+        <p>Retrieve the evidence, understand the priorities, work in the opportunity and retain a trustworthy record.</p>
+      </div>
+      <div class="journey-grid">
+        <article><b>01</b><h3>Weekly Milestones</h3><p>Retrieve, review and route evidence before preparing guarded updates.</p></article>
+        <article><b>02</b><h3>PULSE Tracker</h3><p>Prioritise personal actions, team decisions and evidence-backed opportunity signals.</p></article>
+        <article><b>03</b><h3>Portfolio</h3><p>Inspect accounts, opportunities, milestones, ownership and deal-team coverage.</p></article>
+        <article><b>04</b><h3>Connect</h3><p>Prepare the scheduled conversation from verified evidence and FY27 measures.</p></article>
+        <article><b>05</b><h3>Reports</h3><p>Reopen saved Weekly and Connect versions without regenerating history.</p></article>
+        <article><b>06</b><h3>PULSE Copilot</h3><p>Ask read-only questions about risk, evidence gaps and the next best action.</p></article>
+      </div>
+    </section>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="hero-glow"></div>
-  <div class="pill"><span class="dot"></span> PIPELINE UPDATES · LIFECYCLE · SE EXECUTION</div>
-  <h1 class="hero-title">
-    Every milestone, motion, and Connect —<br />
-    <span class="grad">in one pulse.</span>
-  </h1>
-  <p class="hero-sub">
-    PULSE is the AI-powered command centre for Microsoft Solution Engineers. It turns your
-    signed-in MSX portfolio and Microsoft 365 evidence into weekly milestone updates,
-    an execution action queue, portfolio workspaces, guarded MSX operations and an
-    FY27 Connect — all inside one Power App.
-  </p>
+    <section class="feature section" id="weekly">
+      <div class="feature-copy">
+        <div class="eyebrow blue">WEEKLY MILESTONES</div>
+        <h2>Prove the work before writing the update.</h2>
+        <p>Weekly begins with an exact reporting period and retrieved evidence. Each substantive item is approved, excluded or routed to Weekly / MSX, Account holding or Connect before PULSE generates milestone commentary.</p>
+        <ul class="ticks">
+          <li>Four-step retrieve, review, generate and update workflow</li>
+          <li>Direct, Partner, Internal and Cross-Territory provenance</li>
+          <li>Safe account holding when genuine pipeline attribution is unavailable</li>
+          <li>Guarded previews for comments and HVA tasks, including duration</li>
+        </ul>
+        <a class="text-link" href="userguide.html#weekly">Weekly Milestones guide →</a>
+      </div>
+      <figure class="app-frame"><img src="images/current/weekly.png" alt="Current Weekly Milestones workspace using fabricated data" /></figure>
+    </section>
 
-  <div class="hero-pills">
-    <span class="fpill">📊 Weekly Milestones</span>
-    <span class="fpill">🎯 SE Execution Tracker</span>
-    <span class="fpill">🧭 Portfolio Workspaces</span>
-    <span class="fpill">📝 FY Connect Generator</span>
-  </div>
+    <section class="tracker-section section" id="tracker">
+      <div class="section-heading">
+        <div class="eyebrow teal">PULSE TRACKER</div>
+        <h2>Different decisions, one evidence-led population.</h2>
+        <p>Tracker separates immediate personal action, team review and broader opportunity discovery without mixing their purposes or denominators.</p>
+      </div>
+      <div class="tab-gallery">
+        <article>
+          <figure class="app-frame"><img src="images/current/tracker-this-week.png" alt="PULSE Tracker This Week workspace" /></figure>
+          <h3>This Week</h3><p>Highest-value open actions across ownership, HVA, attach and Technical Close.</p>
+        </article>
+        <article>
+          <figure class="app-frame"><img src="images/current/tracker-opportunity-review.png" alt="PULSE Tracker Opportunity Review workspace" /></figure>
+          <h3>Opportunity Review</h3><p>Evidence and decisions for Scrum, forecast, pipeline and account reviews.</p>
+        </article>
+        <article>
+          <figure class="app-frame"><img src="images/current/tracker-opportunity-radar.png" alt="PULSE Tracker Opportunity Radar workspace" /></figure>
+          <h3>Opportunity Radar</h3><p>Evidence-backed signals for exploration without forcing premature pipeline.</p>
+        </article>
+      </div>
+    </section>
 
-  <div class="hero-cta">
-    <a class="btn btn-grad btn-lg" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">▶ Open PULSE</a>
-    <a class="btn btn-dark btn-lg" href="userguide.html">📖 Read the user guide</a>
-  </div>
-  <p class="hero-note">Sign in with your Microsoft work account. <a href="userguide.html#start">Read the Power App guide →</a></p>
-</section>
+    <section class="feature section reverse" id="portfolio">
+      <div class="feature-copy">
+        <div class="eyebrow amber">PORTFOLIO &amp; OPPORTUNITY WORKSPACE</div>
+        <h2>Move from the signal to the exact record.</h2>
+        <p>Portfolio preserves parent and child account relationships and opens the detailed opportunity workspace for milestone coverage, ownership, team membership, POC/Pilot and Technical Close work.</p>
+        <a class="text-link" href="userguide.html#portfolio">Portfolio guide →</a>
+      </div>
+      <figure class="app-frame"><img src="images/current/portfolio.png" alt="Current PULSE Portfolio workspace using fabricated data" /></figure>
+    </section>
 
-<!-- ===== MISSION ===== -->
-<section class="mission">
-  <p>Less time <span class="grad">reporting</span> your work. More time <span class="grad">doing</span> it.</p>
-</section>
+    <section class="feature section connect-feature" id="connect">
+      <div class="feature-copy">
+        <div class="eyebrow purple">FY27 CONNECT</div>
+        <h2>Prepare the conversation—not just the prose.</h2>
+        <p>PULSE discovers the First or Next Connect schedule, builds the correct evidence window and keeps goals, workstreams, contribution type, financial context and MSX attribution visible before generation.</p>
+        <ul class="ticks">
+          <li>Scheduled conversation and pre-read deadline</li>
+          <li>Needs-review, attribution-pending and verified-history queues</li>
+          <li>Five-item pagination with goal, date and workstream filters</li>
+          <li>Private, versioned narratives grounded in verified evidence</li>
+        </ul>
+        <a class="text-link" href="userguide.html#connect">Detailed Connect guide →</a>
+      </div>
+      <figure class="app-frame"><img src="images/current/connect.png" alt="Current FY27 Connect workspace using fabricated data" /></figure>
+    </section>
 
-<!-- ===== OVERVIEW / WHAT IS PULSE ===== -->
-<section class="section" id="overview">
-  <div class="eyebrow">WHAT IS PULSE</div>
-  <h2 class="section-title">One command centre for your <span class="grad">SE execution</span></h2>
-  <p class="section-lead">
-    PULSE reads the systems you already work in — MSX (Dataverse), your Microsoft 365
-    evidence, and governed Fabric context — then brings Weekly, Tracker, Portfolio,
-    Connect, Reports and PULSE Copilot into one signed-in Power App. You review and
-    approve; PULSE does the assembling.
-  </p>
-  <div class="cards-4">
-    <div class="mini"><div class="mini-ico">🗓️</div><h3>Weekly Milestones</h3><p>Retrieve, verify and route evidence before preparing guarded MSX updates.</p><a href="#milestones">Learn more →</a></div>
-    <div class="mini"><div class="mini-ico">🎯</div><h3>Execution Tracker</h3><p>This Week, Opportunity Review and Opportunity Radar turn portfolio gaps into actions.</p><a href="#tracker">Learn more →</a></div>
-    <div class="mini"><div class="mini-ico">🧭</div><h3>Portfolio</h3><p>Inspect accounts, opportunities, milestones, ownership and deal-team coverage.</p><a href="#accounts">Learn more →</a></div>
-    <div class="mini"><div class="mini-ico">📝</div><h3>FY27 Connect</h3><p>Review verified evidence, goal measures and workstreams before generating a versioned narrative.</p><a href="#connect">Learn more →</a></div>
-  </div>
-</section>
+    <section class="copilot-band section">
+      <figure class="app-frame"><img src="images/current/pulse-copilot.png" alt="Embedded PULSE Copilot drawer" /></figure>
+      <div>
+        <div class="eyebrow purple">PULSE COPILOT</div>
+        <h2>Decision support from every page.</h2>
+        <p>Ask what needs attention, what is blocked, why PULSE believes it and what should happen next. PULSE Copilot remains read-only and does not replace guarded workflows.</p>
+      </div>
+    </section>
 
-<!-- ===== FEATURE: MILESTONES ===== -->
-<section class="feature" id="milestones">
-  <div class="feature-text">
-    <div class="eyebrow">WEEKLY MILESTONES</div>
-    <h2 class="feature-title">Your week,<br /><span class="grad">already written</span></h2>
-    <p>
-      PULSE pulls your live MSX milestones and the week's real activity — meetings,
-      emails, follow-ups — and drafts the weekly progress narrative for each one. You
-      review, tweak, and save. It files everything by fiscal week automatically, with a
-      roll-up of territory value, ACR, HoK and blockers across every deal.
-    </p>
-    <ul class="ticks">
-      <li>AI-drafted weekly progress from your actual M365 activity</li>
-      <li>Direct / Partner / Internal / Cross-Territory evidence classification</li>
-      <li>Safe Account holding when genuine customer work cannot yet be linked to pipeline</li>
-      <li>Guarded milestone comments and HVA tasks, including explicit task duration</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="Weekly Milestones dashboard">
-    <img src="images/milestones.png" alt="PULSE Weekly Milestones dashboard" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
+    <section class="videos section" id="videos">
+      <div class="section-heading">
+        <div class="eyebrow">PRODUCT WALKTHROUGHS</div>
+        <h2>See the current Power App in action</h2>
+        <p>Recorded from the current Production interface at desktop resolution using fabricated customers, opportunities, evidence and commercial values.</p>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" poster="images/current/weekly.png"><source src="videos/weekly-milestones-walkthrough.mp4" type="video/mp4" /></video>
+          <div><h3>Weekly Milestones</h3><p>Period selection, evidence routing and guarded update preparation.</p></div>
+        </article>
+        <article class="video-card">
+          <video controls preload="metadata" poster="images/current/tracker-this-week.png"><source src="videos/pulse-tracker-walkthrough.mp4" type="video/mp4" /></video>
+          <div><h3>PULSE Tracker</h3><p>This Week, Opportunity Review and Opportunity Radar.</p></div>
+        </article>
+        <article class="video-card">
+          <video controls preload="metadata" poster="images/current/connect.png"><source src="videos/connect-walkthrough.mp4" type="video/mp4" /></video>
+          <div><h3>FY27 Connect</h3><p>Preparation context, evidence review, generation and PULSE Copilot.</p></div>
+        </article>
+      </div>
+    </section>
 
-<!-- ===== FEATURE: PUSH TO CRM ===== -->
-<section class="feature reverse" id="crm">
-  <div class="feature-text">
-    <div class="eyebrow">EDIT &amp; PUSH TO CRM</div>
-    <h2 class="feature-title">Review, edit,<br /><span class="grad">push to CRM</span></h2>
-    <p>
-      Every card opens into a full editor. Refine the weekly progress, set the status,
-      capture next steps and add tasks — then inspect the exact account, opportunity,
-      milestone, comment and task operation in the guarded preview. Confirmed operations
-      execute as the signed-in user. The generated text is a starting point; the final
-      word is always yours.
-    </p>
-    <ul class="ticks">
-      <li>Editable commentary — the CRM comment updates as you type</li>
-      <li>Set milestone status: On Track, At Risk, Blocked, Completed…</li>
-      <li>HVA tasks include an explicit 15–120 minute duration (30 minutes by default)</li>
-      <li>All classified evidence can enter the guarded preview; nothing writes until you explicitly confirm</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="Edit &amp; push to CRM">
-    <img src="images/crm-edit.png" alt="PULSE edit panel with editable CRM comment preview and task status" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
+    <section class="cta section">
+      <div>
+        <div class="eyebrow">READY TO USE PULSE?</div>
+        <h2>Open the signed-in Power App.</h2>
+        <p>No agent package, sideloading or link code. Select your work account and begin with the workflow you need.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-large" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">Open PULSE</a>
+        <a class="btn btn-secondary btn-large" href="userguide.html">Complete user guide</a>
+      </div>
+    </section>
+  </main>
 
-<!-- ===== FEATURE: ACCOUNT LIST ===== -->
-<section class="feature" id="accounts">
-  <div class="feature-text">
-    <div class="eyebrow">ACCOUNT LIST</div>
-    <h2 class="feature-title">Your whole<br /><span class="grad">territory, mapped</span></h2>
-    <p>
-      PULSE reads your deal-team assignments straight from Dataverse and lays out your
-      full book of business — parent accounts, their child organisations, and the
-      territory each rolls up to. Duplicate records are de-duplicated, and each account
-      is tagged with the SE motions in play so you always know your patch.
-    </p>
-    <ul class="ticks">
-      <li>Parent accounts and child organisations from your deal teams</li>
-      <li>Grouped by territory unit, with sub-org counts</li>
-      <li>Motion tags per account so coverage is obvious</li>
-      <li>The same source of truth the Tracker and Whitespace use</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="Account List">
-    <img src="images/portfolio.png" alt="PULSE Account List — parent accounts and child organisations by territory" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: TRACKER ===== -->
-<section class="feature reverse" id="tracker">
-  <div class="feature-text">
-    <div class="eyebrow">SE EXECUTION TRACKER</div>
-    <h2 class="feature-title">Every gap,<br /><span class="grad">made actionable</span></h2>
-    <p>
-      Tracker uses one evidence-led Stage 2–3 population and turns execution gaps into
-      operational views. Start with the prioritised This Week queue, use Opportunity
-      Review for structured deal inspection, and use Opportunity Radar to discover or
-      qualify work that is not yet represented correctly.
-    </p>
-    <ul class="ticks">
-      <li>This Week ranks the highest-value open execution actions</li>
-      <li>Opportunity Review shows ownership, coverage, POC/Pilot, HVA and Technical Win state</li>
-      <li>Opportunity Radar separates confirmed signals from qualification needs</li>
-      <li>Aligned-territory and cross-territory deal-team lenses preserve the correct scope</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="SE Execution Tracker">
-    <img src="images/tracker.png" alt="PULSE SE Execution Tracker" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: MOTION SCORECARD ===== -->
-<section class="feature" id="motion-scorecard">
-  <div class="feature-text">
-    <div class="eyebrow">SE MOTION SCORECARD</div>
-    <h2 class="feature-title">Execution measures,<br /><span class="grad">scored with context</span></h2>
-    <p>
-      The FY27 scorecard separates milestone engagement, POC/Pilot ownership, HVA evidence,
-      Technical Win coverage, milestone progression and the governed Database, Security and
-      Factory attach measures. Each card states its population so unlike denominators are not
-      mixed into one percentage.
-    </p>
-    <ul class="ticks">
-      <li>Current-quarter, completed-quarter, year-to-date and weekly-progress views</li>
-      <li>Measure-specific denominators and explicit exception rules</li>
-      <li>Opportunity-level evidence behind each result</li>
-      <li>Click through to inspect the actions behind the number</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="Eight-motion scorecard">
-    <img src="images/motion-scorecard.png" alt="PULSE motion scorecard across eight SE motions with coverage and gap ACR" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: MOTION BREAKDOWN ===== -->
-<section class="feature reverse" id="motions">
-  <div class="feature-text">
-    <div class="eyebrow">MOTION DRILL-IN</div>
-    <h2 class="feature-title">Attach gaps,<br /><span class="grad">deal by deal</span></h2>
-    <p>
-      Click any motion and PULSE opens the deals behind the score — exactly which
-      opportunities have it attached and which don't, each named with its ACR and the
-      gap ACR still on the table. It's the difference between "we should attach more" and
-      a named list of deals to act on this week.
-    </p>
-    <ul class="ticks">
-      <li>Coverage % and gap ACR for every motion</li>
-      <li>Attached vs gap opportunities, named with their ACR</li>
-      <li>"Why this matters" context for each motion</li>
-      <li>Discipline-aware: your primary motions vs adjacent / hand-off</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="Motion coverage breakdown">
-    <img src="images/tracker-motions.png" alt="PULSE motion breakdown showing attached and gap opportunities with ACR" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: TERRITORY WHITESPACE ===== -->
-<section class="feature" id="whitespace">
-  <div class="feature-text">
-    <div class="eyebrow">TERRITORY WHITESPACE</div>
-    <h2 class="feature-title">Where to build<br /><span class="grad">pipeline next</span></h2>
-    <p>
-      Whitespace turns your territory into an action queue. PULSE finds accounts with an
-      active opportunity but no matching motion (Attach Gaps) and accounts with no active
-      opportunity at all (Greenfield), then ranks them by uncovered pipeline and how soon
-      the anchor deal closes — and offers an AI-suggested attach play for each.
-    </p>
-    <ul class="ticks">
-      <li>Attach Gap vs Greenfield, grouped by territory</li>
-      <li>Prioritised by pipeline size and closing urgency</li>
-      <li>Names the exact deal(s) to attach a motion to</li>
-      <li>One-click "Suggest attach play" — an AI next step grounded in the live deal</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="Territory whitespace &amp; AI attach play">
-    <img src="images/tracker-whitespace.png" alt="PULSE territory whitespace with attach gaps, priority and closing timing" onerror="this.closest('.shot').classList.add('shot-empty')" />
-    <img src="images/attach-play.png" alt="PULSE AI-suggested attach play with moves, anchor deal and talk track" style="margin-top:14px" onerror="this.style.display='none'" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: CAF ===== -->
-<section class="feature reverse" id="caf">
-  <div class="feature-text">
-    <div class="eyebrow">CAF NOMINATIONS</div>
-    <h2 class="feature-title">Never miss a<br /><span class="grad">Factory nomination</span></h2>
-    <p>
-      PULSE watches the Cloud Accelerate Factory data and surfaces the opportunities
-      that are eligible but not nominated, stalled, or declined. When one qualifies, it
-      assembles the full nomination packet — mapped to the Azure Offer Navigator form —
-      for you to review and submit.
-    </p>
-    <ul class="ticks">
-      <li>Eligible / stalled / declined nomination queue</li>
-      <li>Auto-resolved specialist and co-sell partner</li>
-      <li>Copy-ready packet aligned to Azure Offer Navigator sections</li>
-      <li>PULSE never submits for you — you stay in control</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="CAF nomination packet">
-    <img src="images/caf.png" alt="PULSE CAF nomination packet" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: CONNECT ===== -->
-<section class="feature" id="connect">
-  <div class="feature-text">
-    <div class="eyebrow">FY CONNECT</div>
-    <h2 class="feature-title">Your Connect,<br /><span class="grad">evidenced all year</span></h2>
-    <p>
-      PULSE discovers the scheduled Connect conversation and builds the correct evidence
-      window around it. Review retrieved contributions, attribution gaps, financial
-      context, FY27 goal measures and workstreams before asking AI to draft the narrative.
-    </p>
-    <ul class="ticks">
-      <li>Scheduled First or Next Connect window, with pre-read deadline</li>
-      <li>Financial summary and ACR-by-customer, deduped per opportunity</li>
-      <li>Needs-review, attribution-pending and verified-history queues</li>
-      <li>Five-item pagination plus goal, workstream and date filters</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="FY Connect generator">
-    <img src="images/connect.png" alt="PULSE FY Connect generator" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: CONNECT NARRATIVE ===== -->
-<section class="feature reverse" id="connect-write">
-  <div class="feature-text">
-    <div class="eyebrow">AI-WRITTEN CONNECT</div>
-    <h2 class="feature-title">Reflect &amp; plan,<br /><span class="grad">written for you</span></h2>
-    <p>
-      After review, PULSE drafts your Connect from verified evidence — results you
-      delivered and how, setbacks and what you learned, goals for the period ahead, and
-      the behaviours that will get you there. Every claim is grounded in a real logged
-      activity, with character counts and copy buttons ready for the review form.
-    </p>
-    <ul class="ticks">
-      <li>"Reflect on the past" and "Plan for the future" in your voice</li>
-      <li>Grounded only in evidence you've logged — no invention</li>
-      <li>Character counts tuned to the Connect form limits</li>
-      <li>Copy each answer, or the entire Connect, in one click</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="AI-written Connect">
-    <img src="images/connect-narrative.png" alt="PULSE AI-written Connect — reflect on the past and plan for the future" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== FEATURE: CONNECT GOALS ===== -->
-<section class="feature" id="connect-goals">
-  <div class="feature-text">
-    <div class="eyebrow">EVIDENCE BY GOAL</div>
-    <h2 class="feature-title">Mapped to your<br /><span class="grad">goals 1–5</span></h2>
-    <p>
-      Under the prose, verified evidence is classified by FY27 goal and consolidated
-      workstream. Contribution type, source lineage, customer context and attribution
-      status remain visible so every material claim can be traced and corrected.
-    </p>
-    <ul class="ticks">
-      <li>Evidence classified to the appropriate FY27 goal or supporting-only context</li>
-      <li>"What (results)" and "How (behaviours)" per goal</li>
-      <li>Mandatory compliance remains separate from role and technical learning</li>
-      <li>Saved Connects are private, versioned snapshots</li>
-    </ul>
-  </div>
-  <figure class="shot" data-label="Evidence mapped by goal">
-    <img src="images/connect-goals.png" alt="PULSE Connect evidence mapped to a goal with What/How and evidence table" onerror="this.closest('.shot').classList.add('shot-empty')" />
-  </figure>
-</section>
-
-<!-- ===== HOW IT WORKS ===== -->
-<section class="section alt" id="how">
-  <div class="eyebrow">HOW IT WORKS</div>
-  <h2 class="section-title">One signed-in <span class="grad">Power App</span></h2>
-  <p class="section-lead">PULSE combines signed-in portfolio data, evidence review, execution guidance and guarded actions without a separate agent package or link code.</p>
-
-  <div class="archflow how-arch">
-    <span class="node">🧑‍💻 You<small>corporate work account</small></span>
-    <span class="arrow">→</span>
-    <span class="node">⚡ PULSE Power App<small>Weekly · Tracker · Portfolio · Connect</small></span>
-    <span class="arrow">→</span>
-    <span class="node">🛡️ Guarded services<small>identity · preview · audit</small></span>
-    <span class="arrow">→</span>
-    <span class="node">🗄️ Your MSX &amp; M365<small>signed-in-user context</small></span>
-  </div>
-
-  <div class="how-grid">
-    <div class="how-step"><div class="how-n">1</div><h3>Open and sign in</h3><p>Select your corporate work account. PULSE loads the portfolio and evidence available to that user.</p></div>
-    <div class="how-step"><div class="how-n">2</div><h3>Review before action</h3><p>Verify evidence, inspect recommendations, and preview the exact account, opportunity, milestone and operation.</p></div>
-    <div class="how-step"><div class="how-n">3</div><h3>Confirm guarded writes</h3><p>MSX actions execute only after explicit approval and run natively as the signed-in user.</p></div>
-  </div>
-
-  <h3 class="trust-h">Built to be trusted</h3>
-  <ul class="ticks trust-ticks">
-    <li>PULSE suggests; you approve every CRM update, task, team action and nomination.</li>
-    <li>Guarded previews expose the exact target and operation before any external write.</li>
-    <li>Per-user isolation — your reports and Connect evidence are keyed to you alone.</li>
-    <li>Evidence classification explains provenance; every MSX route still requires guarded preview and confirmation.</li>
-  </ul>
-</section>
-
-<section class="section" id="videos">
-  <div class="eyebrow center">PRODUCT VIDEOS</div>
-  <h2 class="section-title center">See each major workflow <span class="grad">end to end</span></h2>
-  <div class="video-grid">
-    <article class="video-card"><video controls preload="metadata" poster="images/milestones.png"><source src="videos/weekly-milestones-walkthrough.mp4" type="video/mp4"></video><h3>Weekly Milestones</h3><p>Evidence, milestone review and guarded CRM preparation.</p></article>
-    <article class="video-card"><video controls preload="metadata" poster="images/tracker.png"><source src="videos/pulse-tracker-walkthrough.mp4" type="video/mp4"></video><h3>PULSE Tracker</h3><p>Tracker measures, opportunity drill-ins, whitespace and CAF context.</p></article>
-    <article class="video-card"><video controls preload="metadata" poster="images/connect.png"><source src="videos/connect-walkthrough.mp4" type="video/mp4"></video><h3>Connect</h3><p>Evidence, goals and generated Connect narrative.</p></article>
-  </div>
-  <p class="media-note">All media uses fabricated customers and illustrative values. The workflow guide reflects the current Power App; video frames are illustrative.</p>
-</section>
-
-<!-- ===== WHERE YOUR DATA COMES FROM ===== -->
-<section class="section" id="data-sources">
-  <div class="eyebrow center">WHERE YOUR DATA COMES FROM</div>
-  <h2 class="section-title center">Your data, <span class="grad">never invented</span></h2>
-  <p class="section-lead center">PULSE retrieves grounded data from MSX and the signed-in user's Microsoft 365. It never invents customers, opportunities, milestones or numbers, and any external write requires an explicit guarded confirmation.</p>
-  <div class="how-grid">
-    <div class="how-step"><div class="how-n">🤝</div><h3>Milestones, opportunities &amp; commentary</h3><p>Come from MSX for every account and opportunity where <strong>you're on the deal team</strong> (Account or Opportunity Team). Not on a deal team? It won't appear. Added to one? It shows up. PULSE surfaces and structures what MSX already holds — the weekly narrative is a draft you approve.</p></div>
-    <div class="how-step"><div class="how-n">🗂️</div><h3>Your account list</h3><p>Comes from your <strong>MSX Account Team</strong> — the same source your RAIN profile uses. PULSE mirrors it exactly and de-duplicates, so your patch matches what MSX has on record.</p></div>
-    <div class="how-step"><div class="how-n">🔍</div><h3>Evidence — mail, chat, meetings</h3><p>Pulled from <strong>your own</strong> Microsoft 365 for the selected Weekly or Connect evidence window. PULSE prioritises active contribution — work you sent, presented or authored — rather than passive attendance or copied messages.</p></div>
-  </div>
-  <div style="max-width:900px;margin:30px auto 0;padding:18px 24px;border:1px solid rgba(255,184,77,.4);border-left:4px solid #ffb84d;border-radius:16px;background:rgba(255,184,77,.08);color:#e9e3d4;font-size:0.98rem;line-height:1.65;">
-    <strong style="color:#ffcf8a;">⚠️ At fiscal-year crossover (early July)</strong> MSX re-provisions territories and account teams. For a short spell your account list can look <strong>larger, smaller, or spread across regions outside your patch</strong> until assignments settle — this is MSX data catching up, not a PULSE error. PULSE always reflects whatever your Account Team says today; if it still looks wrong once the dust settles, it's an account-team provisioning fix to raise with your MSX / ops contact.
-  </div>
-</section>
-
-<!-- ===== GET STARTED ===== -->
-<section class="section getstarted" id="start">
-  <div class="eyebrow center">GET STARTED</div>
-  <h2 class="section-title center">Start in <span class="grad">three steps</span></h2>
-  <p class="section-lead center">No agent package, sideloading or link code. Open the Power App and work in your signed-in user context.</p>
-  <div class="steps">
-    <div class="step"><span class="step-n">1</span><div><h3>Open PULSE</h3><p>Launch the Production Power App and select your corporate work account if prompted.</p></div></div>
-    <div class="step"><span class="step-n">2</span><div><h3>Confirm identity and health</h3><p>Check your name, Systems healthy, and the signed-in-user MSX banner.</p></div></div>
-    <div class="step"><span class="step-n">3</span><div><h3>Choose your workflow</h3><p>Start in Weekly, Tracker, Portfolio or Connect. PULSE Copilot remains available for read-only guidance.</p></div></div>
-  </div>
-  <div class="getstarted-cta">
-    <a class="btn btn-grad btn-lg" href="userguide.html#start">📖 Full setup walkthrough</a>
-    <a class="btn btn-dark btn-lg" href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">▶ Open PULSE Production</a>
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section class="section contact-sec">
-  <h2 class="section-title center">Questions, feedback, or want to help shape it?</h2>
-  <p class="section-lead center">PULSE is built and run by one SE in UK&amp;I. Feedback and collaboration very welcome.</p>
-  <a class="contact-card" href="mailto:dboateng@microsoft.com"><span class="c-ico">✉️</span> dboateng@microsoft.com</a>
-</section>
-
-<footer class="footer">
-  <div class="brand footer-brand">
-    <svg class="brand-mark" viewBox="0 0 160 40" width="30" height="18" aria-hidden="true"><polyline points="0,20 30,20 42,6 54,34 66,14 78,26 90,20 160,20" fill="none" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <span class="brand-text">PULSE</span>
-  </div>
-  <div class="footer-sub">Pipeline Updates, Lifecycle &amp; SE Execution</div>
-  <div class="footer-links">
-    <a href="https://apps.powerapps.com/play/e/e039dcfb-b20b-e65f-ad57-d03475ca12a8/app/08a4dc36-cfad-464f-891b-8ad8db1c9adf?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener">Open PULSE</a>
-    <a href="userguide.html">User guide</a>
-    <a href="userguide.html#safety">Safety &amp; trust</a>
-  </div>
-  <div class="footer-fine">Microsoft-internal tool for Solution Engineers. Not an official Microsoft product.</div>
-</footer>
-
-<script src="assets/site.js"></script>
+  <footer class="footer">
+    <strong>PULSE</strong>
+    <span>Pipeline Updates, Lifecycle &amp; SE Execution</span>
+    <p>Microsoft-internal tool for Solution Engineers · Product media contains fabricated data only</p>
+  </footer>
+  <script src="assets/site.js?v=20261020"></script>
 </body>
 </html>
