@@ -401,11 +401,22 @@
   <p>Reports is the historical library for saved outputs. Use it to reopen the relevant period or version rather than regenerating an old result from today’s changed portfolio.</p>
 
   <h2 id="copilot">10 · PULSE Copilot</h2>
-  <p>PULSE Copilot is read-only decision support. Ask:</p>
+  <p>PULSE Copilot is an evolving, read-only decision-support preview. The drawer now shows the <strong>current page</strong>, the <strong>current scope</strong> and a plain-language explanation of the context it is using before the user asks a question.</p>
+  <figure class="app-frame"><img src="images/current/pulse-copilot.png" alt="Page-aware PULSE Copilot showing current page, selected scope and contextual prompts" /><figcaption>Page-aware context, selected-portfolio scope and prompts that change with the active workspace</figcaption></figure>
+  <p>Its behaviour is deliberately bounded:</p>
+  <ul>
+    <li><strong>Page aware:</strong> prompts, placeholder text and governed findings change between Home, Weekly, Tracker, Portfolio, Connect, Reports and Admin.</li>
+    <li><strong>Scope aware:</strong> a named customer or opportunity takes priority; otherwise Copilot uses the user’s selected aligned portfolio and excludes cross-territory accounts unless they are explicitly requested.</li>
+    <li><strong>Conversation aware:</strong> short follow-ups continue the active topic, objective and timeframe. Navigating to a new page starts a new logical thread so stale page context is not silently reused.</li>
+    <li><strong>Evidence aware:</strong> explicit Microsoft 365 search requests can invoke WorkIQ retrieval. Results distinguish evidence already captured in PULSE from genuinely new candidates, preventing duplicate add recommendations.</li>
+    <li><strong>Relevance bounded:</strong> Copilot receives the governed findings relevant to the active page and question rather than mixing unrelated Weekly, Tracker, Connect or Technical Close signals.</li>
+    <li><strong>Read only:</strong> Copilot can explain status, evidence gaps, blockers and next actions, but it cannot perform or claim an MSX write.</li>
+  </ul>
+  <p>Example questions:</p>
   <span class="cmd">What needs my attention across PULSE, and why?</span>
   <span class="cmd">Which retrieved evidence still needs review or attribution?</span>
   <span class="cmd">Where are TCP, HoK, CRM or ownership actions unresolved?</span>
-  <p>It explains status, evidence and next actions, but it does not replace the guarded workflow or perform an MSX write.</p>
+  <p>Copilot supports the decision; it does not replace the governed PULSE workflow. Verify consequential conclusions before acting.</p>
 
   <h2 id="safety">11 · Safety, identity and trust</h2>
   <ul>
