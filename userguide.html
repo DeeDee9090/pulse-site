@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PULSE Power App — Complete User Guide</title>
-<meta name="description" content="Complete guide to role-aware PULSE: Weekly Milestones, Tracker, Technical Close, Portfolio, Connect, governed MSX actions and PULSE Copilot." />
+<meta name="description" content="Complete guide to role-aware PULSE: Weekly Milestones, Tracker, Technical Close, Portfolio, Connect, Feedback, governed MSX actions and PULSE Copilot." />
 <link rel="stylesheet" href="assets/site.css?v=20261025a" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolyline points='2,20 12,20 17,8 22,32 27,14 32,24 38,20' fill='none' stroke='%2300d4ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 </head>
@@ -28,6 +28,7 @@
     <a href="#technical-close">TECHNICAL CLOSE</a>
     <a href="portfolio.html">PORTFOLIO</a>
     <a href="#connect">CONNECT</a>
+    <a href="#feedback">FEEDBACK</a>
     <a href="#safety">SAFETY</a>
   </nav>
   <a class="btn btn-grad nav-cta" href="https://myaccess.microsoft.com/@microsoft.onmicrosoft.com#/access-packages/0dbd2a71-1cb3-450d-a320-0b40c3ac8f8f" target="_blank" rel="noopener">GET ACCESS</a>
@@ -47,6 +48,7 @@
     <a href="#portfolio">Portfolio</a>
     <a href="#connect">Connect</a>
     <a href="#reports">Reports</a>
+    <a href="#feedback">Feedback</a>
     <a href="#copilot">PULSE Copilot</a>
     <a href="#safety">Safety</a>
     <a href="#faq">FAQ</a>
@@ -88,8 +90,9 @@
     <li><strong>Portfolio</strong> — inspect account hierarchies, opportunities, milestones, ownership, deal-team membership and opportunity workspaces.</li>
     <li><strong>Connect</strong> — prepare the scheduled conversation from authoritative role guidance, verified evidence and versioned narratives.</li>
     <li><strong>Reports</strong> — revisit saved Weekly and Connect outputs.</li>
+    <li><strong>Feedback</strong> — submit a bug, suggestion or guidance request, follow its plain-language progress and respond when more information is needed.</li>
     <li><strong>PULSE Copilot</strong> — ask read-only, page-aware and profile-aware questions about status, evidence gaps, blockers and next-best actions.</li>
-    <li><strong>Admin</strong> — PULSE owners can view privacy-minimal adoption, workflow health and operating-profile coverage. This view is not available to standard users.</li>
+    <li><strong>Health</strong> — view operational status. PULSE owners can also see privacy-minimal adoption and profile coverage, while authorised feedback reviewers can open the separate Feedback Review workspace.</li>
   </ul>
 
   <h2 id="videos">3 · Product walkthroughs</h2>
@@ -433,12 +436,48 @@
   <h2 id="reports">9 · Reports</h2>
   <p>Reports is the historical library for saved outputs. Use it to reopen the relevant period or version rather than regenerating an old result from today’s changed portfolio.</p>
 
-  <h2 id="copilot">10 · PULSE Copilot</h2>
+  <h2 id="feedback">10 · Feedback</h2>
+  <p class="lead">Feedback gives every SE a simple, private way to report a problem, suggest an improvement or request clearer guidance without needing to understand the engineering workflow behind PULSE.</p>
+
+  <h3>Submit feedback</h3>
+  <ol>
+    <li>Open <strong>Feedback</strong> from the main menu and select <strong>Send feedback</strong>.</li>
+    <li>Choose the feedback type, add a short searchable title, and explain what you expected and what happened.</li>
+    <li>Add any useful detail and up to three privacy-reviewed PNG or JPG screenshots. Do not include customer-sensitive information that is not needed to understand the issue.</li>
+    <li>Review the automatic page and application context, then submit. PULSE records the request against your signed-in identity.</li>
+  </ol>
+  <div class="callout"><strong>Production is the real feedback channel.</strong> Submit genuine feedback in the Production Power App. UAT records are synthetic validation data and are not the source of truth for real user requests.</div>
+
+  <h3>Understand the status</h3>
+  <p>My Feedback uses plain-language stages rather than engineering terminology:</p>
+  <ul>
+    <li><strong>Received</strong> — PULSE has recorded the request.</li>
+    <li><strong>Under review</strong> — a reviewer is assessing the evidence and deciding the next action.</li>
+    <li><strong>Action needed</strong> — the reviewer needs more information from you. Open the request, read the message and send your response.</li>
+    <li><strong>Accepted</strong> — the request has been approved for implementation.</li>
+    <li><strong>Being worked on</strong> — engineering work is underway.</li>
+    <li><strong>In validation</strong> — the change has reached UAT for controlled validation.</li>
+    <li><strong>Released</strong> — the verified change is available in Production.</li>
+    <li><strong>Closed</strong> or <strong>Already reported</strong> — the reviewer explanation remains visible on the request.</li>
+  </ul>
+
+  <h3>Know when something changed</h3>
+  <ul>
+    <li>A red numbered badge appears on the Feedback menu when one or more of your requests has a new update.</li>
+    <li>Updated cards show <strong>New update</strong>. Select <strong>View update</strong> to read it and clear that request’s unread state.</li>
+    <li>The unread state is stored in PULSE, so it remains consistent across browser sessions and devices.</li>
+    <li>Your own submission or response does not create a false notification; meaningful reviewer, engineering, validation and release changes do.</li>
+  </ul>
+
+  <h3>Reviewer controls stay separate</h3>
+  <p>Standard users see only their own requests in My Feedback. Reviewer decisions, secure evidence and internal engineering links are kept in the role-protected <strong>Feedback Review</strong> workspace, available to authorised reviewers through Health.</p>
+
+  <h2 id="copilot">11 · PULSE Copilot</h2>
   <p>PULSE Copilot is an evolving, read-only decision-support preview. The drawer now shows the <strong>current page</strong>, the <strong>current scope</strong> and a plain-language explanation of the context it is using before the user asks a question.</p>
   <figure class="app-frame"><img src="images/current/pulse-copilot.png" alt="Page-aware PULSE Copilot showing current page, selected scope and contextual prompts" /><figcaption>Page-aware context, selected-portfolio scope and prompts that change with the active workspace</figcaption></figure>
   <p>Its behaviour is deliberately bounded:</p>
   <ul>
-    <li><strong>Page aware:</strong> prompts, placeholder text and governed findings change between Home, Weekly, Tracker, Portfolio, Connect, Reports and Admin.</li>
+    <li><strong>Page aware:</strong> prompts, placeholder text and governed findings change between Home, Weekly, Tracker, Portfolio, Connect, Reports, Feedback and Health.</li>
     <li><strong>Profile aware:</strong> Tracker and Connect answers use the detected CAIP, AIBS or Security boundary and do not substitute CAIP targets for another role.</li>
     <li><strong>Scope aware:</strong> a named customer or opportunity takes priority; otherwise Copilot uses the user’s selected aligned portfolio and excludes cross-territory accounts unless they are explicitly requested.</li>
     <li><strong>Conversation aware:</strong> short follow-ups continue the active topic, objective and timeframe. Navigating to a new page starts a new logical thread so stale page context is not silently reused.</li>
@@ -452,7 +491,7 @@
   <span class="cmd">Where are TCP, HoK, CRM or ownership actions unresolved?</span>
   <p>Copilot supports the decision; it does not replace the governed PULSE workflow. Verify consequential conclusions before acting.</p>
 
-  <h2 id="safety">11 · Safety, identity and trust</h2>
+  <h2 id="safety">12 · Safety, identity and trust</h2>
   <ul>
     <li><strong>Signed-in-user execution:</strong> WorkIQ retrieval and MSX writes execute as the user taking the action.</li>
     <li><strong>Explicit approval:</strong> guarded previews show the intended operation before any external write.</li>
@@ -474,6 +513,8 @@
   <p>No. External actions require a preview and explicit confirmation and execute as the signed-in user.</p>
   <h3>Why does Connect show evidence but not count it as an attributed customer outcome?</h3>
   <p>Confirmed evidence can remain MSX-attribution pending until it is linked to a genuine opportunity and milestone.</p>
+  <h3>How will I know whether my feedback has changed?</h3>
+  <p>The Feedback menu shows a red unread count. Open the request and select <strong>View update</strong> to read the latest message or status and clear the notification.</p>
 
   <div class="guide-cta">
     <a class="btn btn-grad btn-lg" href="https://myaccess.microsoft.com/@microsoft.onmicrosoft.com#/access-packages/0dbd2a71-1cb3-450d-a320-0b40c3ac8f8f" target="_blank" rel="noopener">Get PULSE access</a>
