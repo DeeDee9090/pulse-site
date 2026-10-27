@@ -130,7 +130,7 @@
   <div class="product-gallery guide-gallery">
     <figure class="app-frame"><img src="images/current/weekly.png" alt="Populated Weekly workflow" /><figcaption>Retrieved evidence, generated draft and milestone update readiness</figcaption></figure>
     <figure class="app-frame"><img src="images/current/weekly-evidence.png" alt="Verified Weekly evidence detail" /><figcaption>Verified evidence, outcome, provenance and destination</figcaption></figure>
-    <figure class="app-frame gallery-wide"><img src="images/current/weekly-msx-preview.png" alt="Guarded MSX push preview" /><figcaption>Exact append-only MSX comments and safety checks before confirmation</figcaption></figure>
+    <figure class="app-frame gallery-wide"><img src="images/current/weekly-msx-preview.png" alt="Guided bulk MSX confirmation with required milestone comments and optional editable opportunity comments" /><figcaption>Required milestone comments, optional opportunity comments and signed-in-user confirmation</figcaption></figure>
   </div>
 
   <h3>Step 1 — Select dates and retrieve</h3>
@@ -170,8 +170,11 @@
     <li>Create active HVA tasks with an explicit duration (15–120 minutes, default 30).</li>
     <li>Use the Technical Close prompt when a Stage 2 or Stage 3 opportunity requires a living plan.</li>
     <li>Select <strong>Review milestone updates</strong> to preview the exact guarded MSX operations.</li>
+    <li>Review every required Milestone Forecast Comment before confirming the batch.</li>
+    <li>Leave <strong>Also update Opportunity Forecast Comments</strong> off unless the wider opportunity narrative should change. When enabled, PULSE shows an editable comment preview for each ready opportunity.</li>
+    <li>Review milestone and opportunity outcomes separately after execution. A duplicate or failed opportunity preview remains excluded without being reported as a successful write.</li>
   </ul>
-  <div class="callout"><strong>Nothing writes silently.</strong> PULSE shows the account, opportunity, milestone, comment and task operation before confirmation. Direct creation reads the task back to verify the stored duration.</div>
+  <div class="callout"><strong>Nothing writes silently.</strong> Milestone comments are required for the selected batch; Opportunity Forecast Comments are optional and off by default. Every selected destination is previewed, confirmed and reported independently using the signed-in user’s permissions. Direct task creation also reads the task back to verify the stored duration.</div>
 
   <h2 id="tracker">5 · PULSE Tracker</h2>
   <p class="lead">Tracker is the execution workspace. It evaluates one evidence-led Stage 2–3 population, then presents that signed-in scope through three deliberately different views: personal action, team decision and discovery.</p>
