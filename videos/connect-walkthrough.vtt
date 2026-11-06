@@ -1,0 +1,180 @@
+WEBVTT
+
+NOTE
+Fictional demonstration data - no live searches or MSX writes.
+Search/AI backend responses and waits are simulated/compressed. No narration.
+
+1
+00:00:00.000 --> 00:00:06.858
+Prepare a Connect from evidence, not a tab tour.
+Fictional data only. Search/AI responses and waits are simulated/compressed.
+
+2
+00:00:06.858 --> 00:00:22.813
+Confirm the date window; reuse completed coverage.
+Only missing closed dates are searched. Existing saved evidence is retained.
+
+3
+00:00:22.813 --> 00:00:29.346
+Queued is not Running: two date ranges run at most.
+A queued range waits for a slot; it has not begun searching.
+
+4
+00:00:29.346 --> 00:00:38.336
+Sources returned does not mean full date coverage.
+Results must be checked and saved; an incomplete source keeps its dates open.
+
+5
+00:00:38.336 --> 00:00:47.890
+Search ended incomplete: saved evidence stays available.
+Retry incomplete sources searches only the unfinished source—not the whole window.
+
+6
+00:00:47.890 --> 00:01:00.048
+The email-only Retry moves back into the queue.
+The superseded warning disappears; successful searches and saved evidence are retained.
+
+7
+00:01:00.048 --> 00:01:09.403
+Review verified history without verifying it again.
+An earlier saved contribution only needs its goal placement confirmed.
+
+8
+00:01:09.403 --> 00:01:15.652
+Early-careers delivery: verify a completed outcome.
+Confirm what you delivered and who benefited—not attendance alone.
+
+9
+00:01:15.652 --> 00:01:21.914
+Community or ERG contribution: verify the actual impact.
+The adopted accessibility checklist is a concrete completed contribution.
+
+10
+00:01:21.914 --> 00:01:28.121
+Learning or credential completed: check completion proof.
+Completed learning belongs under the skilling goal, not delivery credit.
+
+11
+00:01:28.121 --> 00:01:34.371
+Compliance completed: use the completion record.
+A certificate supports a completed compliance contribution.
+
+12
+00:01:34.371 --> 00:01:39.938
+Compliance awaiting confirmation is a different category.
+This source is only a reminder: Exclude instead of claiming completion.
+
+13
+00:01:39.938 --> 00:01:46.153
+Coaching or mentoring delivered: distinguish direction.
+Delivered coaching is attributable; mentoring received stays supporting context.
+
+14
+00:01:46.153 --> 00:01:52.370
+Reusable asset or innovation created: verify the reuse.
+The sample-data tool is an outcome, not a proposed activity.
+
+15
+00:01:52.370 --> 00:01:58.602
+External speaking or advocacy: verify the delivered event.
+Retain the specific talk and the reusable outcome.
+
+16
+00:01:58.602 --> 00:02:04.835
+When classification is unclear, change the details.
+Choose the contribution type, goal and section before verifying.
+
+17
+00:02:04.835 --> 00:02:16.803
+Customer delivery: inspect the source, then confirm context.
+Link the real customer, opportunity and matching milestone before Verify and use.
+
+18
+00:02:16.803 --> 00:02:24.447
+Keep useful customer/account work without an MSX link.
+General context is a valid explicit placement; it is not a goal achievement.
+
+19
+00:02:24.447 --> 00:02:33.014
+Historical milestone context is reference-only.
+It does not join a deal team or confer ownership, current delivery or revenue credit.
+
+20
+00:02:33.014 --> 00:02:41.297
+CSU handover — no new revenue requirement confirmed.
+Record the recipient and context; do not claim the receiving team’s later delivery.
+
+21
+00:02:41.297 --> 00:02:49.616
+Another SE/team handover keeps the original contribution.
+Record the recipient and context; do not claim the receiving team’s later delivery.
+
+22
+00:02:49.616 --> 00:02:57.930
+An opportunity-only link is also supported.
+Do not invent a milestone when the source supports only the opportunity.
+
+23
+00:02:57.930 --> 00:03:07.878
+If the customer is unclear, verification waits for your choice.
+Search the loaded accounts, select Contoso, then save an account-only contribution.
+
+24
+00:03:07.878 --> 00:03:12.389
+A saved Goal 2 attach claim can need a separate decision.
+Without structured attach proof, move the advice to its appropriate goal.
+
+25
+00:03:12.389 --> 00:03:17.893
+Supporting context is not an approved achievement.
+Mentoring received stays here; it does not become mentoring delivered.
+
+26
+00:03:17.893 --> 00:03:22.709
+Customer-only and historical work remains retained.
+Account-held evidence and handovers are separate from current MSX delivery.
+
+27
+00:03:22.709 --> 00:03:32.774
+Confirmed goal-linked evidence sits under its goal.
+General context stays separate; verification and goal placement are different decisions.
+
+28
+00:03:32.774 --> 00:03:37.593
+General context is an explicit saved choice, not a missing goal.
+Use verified-history filters to see the records kept outside goal achievements.
+
+29
+00:03:37.593 --> 00:03:45.026
+Now generate the Connect from the reviewed evidence.
+This offline AI response is simulated; the output uses the actual current renderer.
+
+30
+00:03:45.026 --> 00:03:51.072
+A populated draft appears, with saved length guidance.
+Looking for missed contributions runs automatically below that advisory.
+
+31
+00:03:51.072 --> 00:04:03.762
+Review missed verified contributions before accepting them.
+Select the useful item and draft additions; the generated answer is not silently changed.
+
+32
+00:04:03.762 --> 00:04:14.114
+Accept the useful addition by editing the answer yourself.
+Save answer creates a separate working copy; the generated original remains protected.
+
+33
+00:04:14.114 --> 00:04:24.973
+Change the depth of one answer without regenerating all four.
+Question 2 becomes Concise. Other answers—including the accepted addition—stay unchanged.
+
+34
+00:04:24.973 --> 00:04:37.116
+Read the final populated draft, then copy the answer or all four.
+The missed contribution is included. Check the character counts before using your wording.
+
+35
+00:04:37.116 --> 00:04:42.380
+End to end: retrieve, recover, verify, place, generate, review and save.
+Fictional demonstration only. No live searches, live data or MSX writes.
